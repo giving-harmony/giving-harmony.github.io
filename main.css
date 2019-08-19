@@ -1,3 +1,14 @@
+div.heading {
+  padding: 32px;
+}
+
+.logo-heading {
+  display: inline;
+  position: relative;
+  top: 16px;
+  font-size: 64px;
+}
+
 .bd-placeholder-img text {
   text-anchor: middle;
 }
