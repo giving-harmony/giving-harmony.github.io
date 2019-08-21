@@ -44,5 +44,6 @@ blockquote p {
 }
 
 .carousel-item img {
-  border-radius: 5px;
+  width: 100%;
+  border-radius: 8px;
 }
