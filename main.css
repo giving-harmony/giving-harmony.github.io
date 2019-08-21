@@ -37,3 +37,12 @@ blockquote p {
 .bd-placeholder-img text {
   text-anchor: middle;
 }
+
+.gallery-carousel {
+  max-width: 800px;
+  margin: auto;
+}
+
+.carousel-item img {
+  border-radius: 5px;
+}
