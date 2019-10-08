@@ -24,6 +24,18 @@ p::first-letter {
   letter-spacing: 1px;
 }
 
+.concert-table {
+  margin: 2rem;
+  border-top: solid;
+  border-bottom: solid;
+  border-collapse: separate;
+  border-spacing: 1rem;
+}
+
+.concert-table th {
+  text-align: right;
+}
+
 blockquote {
   margin-bottom: 48px;
 }
