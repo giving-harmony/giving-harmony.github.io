@@ -46,6 +46,15 @@ blockquote p {
   border-radius: 4px;
 }
 
+blockquote footer {
+  padding-right: 48px;
+  text-align: right;
+}
+
+blockquote footer::before {
+  content: "-- ";
+}
+
 .bd-placeholder-img text {
   text-anchor: middle;
 }
