@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
+      crossorigin="anonymous">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/vuetify@2.6.1/dist/vuetify.min.css"
+      integrity="sha384-E1svP7eBq8ni4Dr1nBNa/di3bB531yS+F05d7XbSj/Wtq3ZxGtaRknDeqiYfPTIA"
+      crossorigin="anonymous">
+  <link rel="stylesheet" href="./main.css">
+
+  <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"
+      integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" 
+      crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" 
+      crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/vue@2.6.14/dist/vue.min.js"
+      integrity="sha384-ULpZhk1pvhc/UK5ktA9kwb2guy9ovNSTyxPNHANnA35YjBQgdwI+AhLkixDvdlw4"
+      crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/vuetify@2.6.1/dist/vuetify.min.js"
+      integrity="sha384-5SpZuh3xGwZc7uucvuR3XDDyprv8b35+c0Souc0+16Mnx3jh2ZrGfSt2uM+LjaK3"
+      crossorigin="anonymous"></script>
+
+    <title>Gallery</title>
+</head>
+
+<body>
+  <header class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#">G</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="concerts.html">Concerts</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="container">
+    <div id="gallery03" class="py-5">
+      <v-card elevation="2">
+        <v-card-title>2021 Summer Gathering</v-card-title>
+      <v-carousel>
+          <v-carousel-item
+            v-for="(item,i) in items"
+            :key="i"
+            :src="item.src"
+            reverse-transition="fade-transition"
+            transition="fade-transition"
+          ></v-carousel-item>
+        </v-carousel>
+      </v-card>
+    </div>
+  
+    <div id="gallery02" class="py-5">
+      <v-card elevation="2">
+        <v-card-title>2021 Summer Tutoring</v-card-title>
+        <v-carousel height="720px">
+          <v-carousel-item
+            v-for="(item,i) in items"
+            :key="i"
+            :src="item.src"
+            reverse-transition="fade-transition"
+            transition="fade-transition"
+          ></v-carousel-item>
+        </v-carousel>
+      </v-card>
+    </div>
+
+    <div id="gallery01" class="py-5">
+      <v-card elevation="2">
+        <v-card-title>Young Musicians</v-card-title>
+        <v-carousel>
+          <v-carousel-item
+            v-for="(item,i) in items"
+            :key="i"
+            :src="item.src"
+            reverse-transition="fade-transition"
+            transition="fade-transition"
+          ></v-carousel-item>
+        </v-carousel>
+      </v-card>
+    </div>
+  </div>
+
+  <script>
+    new Vue({
+      el: '#gallery03',
+      vuetify: new Vuetify(),
+      data: {
+        items: [
+          { src: './img/dsc_0048.jpg', },
+          { src: './img/dsc_0053.jpg', },
+          { src: './img/dsc_0069.jpg', },
+          { src: './img/dsc_9922.jpg', },
+          { src: './img/dsc_9945.jpg', },
+          { src: './img/dsc_9997.jpg', },
+        ],
+      },
+    });
+
+    new Vue({
+      el: '#gallery02',
+      vuetify: new Vuetify(),
+      data: {
+        items: [
+          { src: './img/cathy01.png', },
+          { src: './img/cathy02.png', },
+          { src: './img/ivette01.jpg', },
+          { src: './img/ivette02.jpg', },
+          { src: './img/ivette03.jpg', },
+          { src: './img/ivette04.jpg', },
+          { src: './img/kerry01.jpg', },
+          { src: './img/kerry02.jpg', },
+          { src: './img/anna01.jpg', },
+          { src: './img/anna02.jpg', },
+          { src: './img/anna03.png', },
+        ],
+      },
+    });
+
+    new Vue({
+      el: '#gallery01',
+      vuetify: new Vuetify(),
+      data: {
+        items: [
+          { src: './img/190846.jpg', },
+          { src: './img/190847.jpg', },
+          { src: './img/190848.jpg', },
+        ],
+      },
+    });
+
+  </script>
+</body>
+</html>
+

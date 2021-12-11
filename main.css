@@ -72,3 +72,7 @@ blockquote footer::before {
   width: 100%;
   border-radius: 8px;
 }
+
+.v-window__next {
+  right: 0;
+}
