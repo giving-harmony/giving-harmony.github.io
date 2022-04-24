@@ -48,84 +48,41 @@
   </header>
 
   <div class="container">
-
     <section class="py-5">
-      <h2>The Dawn</h2>
-      <table class="concert-table">
-        <tr>
-          <th>Date and Time</th>
-          <td>Sunday, May 22, 2022 6:00 pm</td>
-        </tr>
-        <tr>
-          <th>Venue</th>
-          <td>Bronwyn Dodson Theatre, Fullerton College<br>321 E Chapman Ave, Fullerton, CA 92832</td>
-        </tr>
-      </table>
-
-      <img class="concert-poster figure-img img-fluid rounded mb-5" src="img/dawn.jpg" alt="">
-
-      <h2>The Echo</h2>
-      <table class="concert-table">
-        <tr>
-          <th>Date and Time</th>
-          <td>Sunday, Dec 5, 2021 6:30 pm</td>
-        </tr>
-        <tr>
-          <th>Venue</th>
-          <td>Forum Theatre, Yorba Linda High School<br>4175 Fairmont Blvd, Yorba Linda, CA 92886</td>
-        </tr>
-      </table>
-
-      <div class="video-wrap mb-5">
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/98-eAkatJSY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+      <div id="dawn-concert">
+        <concert-box v-bind:concert="concert">
+        </concert-box>
       </div>
 
-      <img class="concert-poster figure-img img-fluid rounded mb-5" src="img/echo.jpg" alt="">
-
-      <h3>Concert Program</h3>
-      <div id="echo-program">
-        <v-card v-for="(item,i) in items" :key="i" class="mx-auto my-3">
-          <v-card-title>{{item.title}}</v-card-title>
-          <v-card-subtitle>composer(s): {{item.composer}}</v-card-subtitle>
-          <v-card-text>performer(s): {{item.player}}</v-card-text>
-        </v-card>
+      <div id="echo-concert">
+        <concert-box v-bind:concert="concert">
+          <concert-video v-bind:url="concert.video"></concert-video>
+          <concert-program v-bind:program="concert.program"></concert-program>
+        </concert-box>
       </div>
     </section>
   </div>
 
-  <script>
+  <script type="module">
+    import { dawn, echo } from './concerts.js';
+    import { initVue } from './util.js';
+
+    initVue();
+
     new Vue({
-      el: '#echo-program',
-      vuetify: new Vuetify(),
+      el: '#echo-concert',
       data: () => {
-        let rawItems = [
-          [ 'River Flows in You', 'Yiruma', 'Tina Hou, piano' ],
-          [ 'Safe and Sound', 'Swift, Williams, White, and Burnett', 'Samantha Huang & Nadia Wang, soprano · Evelyn Wu, flute · Cathy Chen, guitar' ],
-          [ 'Octet', 'Schubert; arr: Brown', 'Tina Hou & Cathy, piano' ],
-          [ 'Carnivale', 'Roubos', 'Tina Hou & Cathy, piano' ],
-          [ 'Canon in D', 'Pachelbel', 'Evelyn, flute · Ievtte Chen, cello · Vella Feng, piano' ],
-          [ 'Rhythm in Northern Country', 'Walker', 'Cathy Chen, piano' ],
-          [ 'What a Wonderful World', 'Thiele and Weiss', 'Samantha Huang & Nadia Wang, soprano · Evelyn Wu, flute · Vella Feng, piano' ],
-          [ 'Impromptu', 'Reinhold', 'Anna Huang, piano' ],
-          [ 'A Thousand Years', 'Perri and Hodges', 'Ivette Chen, cello · Cathy Chen, piano' ],
-          [ 'Unravel Tokyo Ghoul', 'Kitajima', 'Vella Feng, piano' ],
-          [ "Fisherman's Song at Eventide", 'Young', 'Evelyn Wu, flute · Anna Huang, piano' ],
-          [ "Can't Help Fall in Love", 'Peretti, Creatore, and Weiss', 'Samantha Huang & Nadia Wang, soprano · Ivette Chen, cello · Cathy Chen, guitar · Tina Hou, piano' ],
-          [ 'Concert Etude No. 3 Un Sospiro', 'Liszt', 'Nadia Wang, piano' ],
-          [ 'Pezzo Cariccioso', 'Tchaikovsky', 'Ivette Chen, cello · Anna Huang, piano' ],
-          [ 'Starlight', 'Bellamy; arr: Chow', 'Samantha Huang & Nadia Wang, soprano · Evelyn Wu & Anna Huang, flute · Ivette Chen, cello · Cathy Chen, guitar · Vella Feng & Tina Hou, piano' ],
-        ];
-        let items = [];
-
-        rawItems.forEach(e => {
-          items.push({ title: e[0], composer: e[1], player: e[2] });
-        });
-
-        return { items: items };
+        return { concert: echo }
       }
     });
+
+    new Vue({
+      el: '#dawn-concert',
+      data: () => {
+        return { concert: dawn }
+      }
+    });
+
   </script>
 </body>
 </html>
