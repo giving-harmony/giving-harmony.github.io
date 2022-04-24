@@ -41,6 +41,7 @@ p::first-letter {
 }
 
 .concert-poster {
+  width: 100%;
   max-width: 560px;
 }
 
