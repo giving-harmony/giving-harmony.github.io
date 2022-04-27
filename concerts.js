@@ -27,7 +27,7 @@ const echo = {
 const dawn = {
   title: 'The Dawn',
   datetime: 'Sunday, May 22, 2022 6:00 pm',
-  venue: [ 'Bronwyn Dodson Theatre, Fullerton College',
+  venue: [ 'Campus Theatre, Fullerton College',
            '321 E Chapman Ave, Fullerton, CA 92832' ],
   poster: 'img/dawn.jpg',
 };
