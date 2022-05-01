@@ -50,74 +50,72 @@
   </header>
 
   <div class="container">
-    <div id="gallery04" class="py-5">
-      <v-card elevation="2">
-        <v-card-title>2021 The Echo</v-card-title>
-        <v-carousel height="auto">
-          <v-carousel-item
-            v-for="(item,i) in items"
-            :key="i"
-            :src="item.src"
-            reverse-transition="fade-transition"
-            transition="fade-transition"
-            ripple="true"
-          ></v-carousel-item>
-        </v-carousel>
-      </v-card>
-    </div>
-
-    <div id="gallery03" class="py-5">
-      <v-card elevation="2">
-        <v-card-title>2021 Summer Gathering</v-card-title>
-        <v-carousel height="auto">
-          <v-carousel-item
-            v-for="(item,i) in items"
-            :key="i"
-            :src="item.src"
-            reverse-transition="fade-transition"
-            transition="fade-transition"
-          ></v-carousel-item>
-        </v-carousel>
-      </v-card>
-    </div>
-  
-    <div id="gallery02" class="py-5">
-      <v-card elevation="2">
-        <v-card-title>2021 Summer Tutoring</v-card-title>
-        <v-carousel height="auto">
-          <v-carousel-item
-            v-for="(item,i) in items"
-            :key="i"
-            :src="item.src"
-            reverse-transition="fade-transition"
-            transition="fade-transition"
-          ></v-carousel-item>
-        </v-carousel>
-      </v-card>
-    </div>
-
-    <div id="gallery01" class="py-5">
-      <v-card elevation="2">
-        <v-card-title>2019 Young Musicians</v-card-title>
-        <v-carousel height="auto">
-          <v-carousel-item
-            v-for="(item,i) in items"
-            :key="i"
-            :src="item.src"
-            reverse-transition="fade-transition"
-            transition="fade-transition"
-          ></v-carousel-item>
-        </v-carousel>
-      </v-card>
+    
+    <div id="galleries" class="py-5">
+      <v-app>
+        <a name="echo"></a>
+        <v-card elevation="2" class="gallery">
+          <v-card-title>2021 The Echo</v-card-title>
+          <v-carousel height="auto">
+            <v-carousel-item
+              v-for="(item,i) in echo"
+              :key="i"
+              :src="item.src"
+              reverse-transition="fade-transition"
+              transition="fade-transition"
+              ripple="true"
+            ></v-carousel-item>
+          </v-carousel>
+        </v-card>
+        <a name="2021-cast"></a>
+        <v-card elevation="2" class="gallery">
+          <v-card-title>2021 Summer Gathering</v-card-title>
+          <v-carousel height="auto">
+            <v-carousel-item
+              v-for="(item,i) in cast2021"
+              :key="i"
+              :src="item.src"
+              reverse-transition="fade-transition"
+              transition="fade-transition"
+            ></v-carousel-item>
+          </v-carousel>
+        </v-card>
+        <a name="2021-tutoring"></a>
+        <v-card elevation="2" class="gallery">
+          <v-card-title>2021 Summer Tutoring</v-card-title>
+          <v-carousel height="auto">
+            <v-carousel-item
+              v-for="(item,i) in tutoring2021"
+              :key="i"
+              :src="item.src"
+              reverse-transition="fade-transition"
+              transition="fade-transition"
+            ></v-carousel-item>
+          </v-carousel>
+        </v-card>
+        <a name="2019-cast"></a>
+        <v-card elevation="2" class="gallery">
+          <v-card-title>2019 Young Musicians</v-card-title>
+          <v-carousel height="auto">
+            <v-carousel-item
+              v-for="(item,i) in cast2019"
+              :key="i"
+              :src="item.src"
+              reverse-transition="fade-transition"
+              transition="fade-transition"
+            ></v-carousel-item>
+          </v-carousel>
+        </v-card>
+      </v-app>
     </div>
   </div>
 
   <script>
     new Vue({
-      el: '#gallery04',
+      el: '#galleries',
       vuetify: new Vuetify(),
       data: {
-        items: [
+        echo: [
           { src: './img/pc055426.jpg', },
           { src: './img/pc055453.jpg', },
           { src: './img/pc055504.jpg', },
@@ -133,14 +131,7 @@
           { src: './img/pc056556.jpg', },
           { src: './img/pc056617.jpg', },
         ],
-      },
-    });
-
-    new Vue({
-      el: '#gallery03',
-      vuetify: new Vuetify(),
-      data: {
-        items: [
+        cast2021: [
           { src: './img/dsc_0048.jpg', },
           { src: './img/dsc_0053.jpg', },
           { src: './img/dsc_0069.jpg', },
@@ -148,14 +139,7 @@
           { src: './img/dsc_9945.jpg', },
           { src: './img/dsc_9997.jpg', },
         ],
-      },
-    });
-
-    new Vue({
-      el: '#gallery02',
-      vuetify: new Vuetify(),
-      data: {
-        items: [
+        tutoring2021: [
           { src: './img/cathy01.png', },
           { src: './img/cathy02.png', },
           { src: './img/ivette01.jpg', },
@@ -168,14 +152,7 @@
           { src: './img/anna02.jpg', },
           { src: './img/anna03.png', },
         ],
-      },
-    });
-
-    new Vue({
-      el: '#gallery01',
-      vuetify: new Vuetify(),
-      data: {
-        items: [
+        cast2019: [
           { src: './img/190846.jpg', },
           { src: './img/190847.jpg', },
           { src: './img/190848.jpg', },

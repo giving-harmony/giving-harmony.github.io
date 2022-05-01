@@ -68,9 +68,9 @@ blockquote footer::before {
   text-anchor: middle;
 }
 
-.gallery-carousel {
+.gallery {
   max-width: 800px;
-  margin: auto;
+  margin: 16px auto;
 }
 
 .carousel-item img {
