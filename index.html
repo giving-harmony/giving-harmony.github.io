@@ -59,6 +59,38 @@
     <div id="home" class="pb-5">
       <v-app>
         <div class="py-3">
+          <v-dialog v-model="dialog" width="480">
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn color="primary" dark v-bind="attrs" v-on="on">Audition application</v-btn>
+            </template>
+    
+            <v-card>
+              <v-card-title class="text-h5 grey lighten-2">
+                Giving Harmony Audition Application
+              </v-card-title>
+              <v-card-text class="pt-3">
+                <p>Hello musicians and parents! Our organization Giving Harmony is looking for aspiring high school musicians and parents to join our non-profit to help us extend a helping hand with each note played! You must be an incoming high school student to audition and BOTH parents must come to the audition. The audition date will be on <strong>July 17th, 2022</strong>. The deadline will be <strong>July 10th</strong>. Check out the <a href="https://forms.gle/kyFjauiqJGR3vamm7" target="_blank">application form</a>.</p>
+                <h5>Audition Requirements</h5>
+                <ul>
+                  <li>Must be an incoming high school student (9th - 12th grade)</li>
+                  <li>2 contrasting pieces for EACH instrument (i.e. 2 pieces from different time periods, a lyrical & technical piece)</li>
+                  <li>No piano accompanist required </li>
+                  <li>Bring a copy of the music for the judges</li>
+                  <li>Parents are strongly recommended to come to the audition</li>
+                  <li>We work as a big family to help those in need, so therefore parents are required to participate in the audition as parents will be helping out the organization as well</li>
+                  <li>Be prepared for a short interview session during your audition with you and your parents!</li>
+                </ul>
+              </v-card-text>
+              <v-divider></v-divider>
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn color="primary" text @click="dialog = false">Close</v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
+        </div>
+
+        <div class="py-3">
           <v-tooltip right color="accent">
             <template v-slot:activator="{ on, attrs }">
               <v-btn color="primary" dark v-bind="attrs" v-on="on" onclick="window.open('https://forms.gle/ik9x1dcL9yTmpZnV6', '_blank')">
@@ -68,6 +100,7 @@
             <span>High school volunteers wanted</span>
           </v-tooltip>
         </div>
+
         <!-- <div class="py-3">
           <v-tooltip right color="accent">
             <template v-slot:activator="{ on, attrs }">
@@ -178,7 +211,7 @@
           items.push({ src: e[0], title: e[1], message: e[2] });
         });
 
-        return { items: items };
+        return { dialog: false, items: items };
       }
     })
   </script>
