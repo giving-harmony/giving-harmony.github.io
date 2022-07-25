@@ -75,7 +75,6 @@ blockquote footer::before {
 .gallery {
   max-width: 800px;
   margin: 16px auto;
-  position: relative;
 }
 
 .carousel-item img {
