@@ -52,6 +52,12 @@
     <section class="py-5">
       <div id="concerts">
         <v-app>
+          <div class="sub-nav">
+            <v-chip v-for="(concert,i) in concerts" :key="i" 
+                    class="ma-2" color="primary" @click="open(i)">
+              {{ concert.title }}
+            </v-chip>
+          </div>
           <v-expansion-panels v-model="panel">
             <v-expansion-panel v-for="(concert,i) in concerts" :key="i">
               <v-expansion-panel-header>{{ concert.title }}</v-expansion-panel-header>
@@ -79,6 +85,9 @@
       data: { 
         concerts: [ dawn, echo ],
         panel: 0
+      },
+      methods: {
+        open(key) { this.panel = key; }
       }
     });
   </script>

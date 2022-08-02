@@ -28,6 +28,10 @@ p::first-letter {
   letter-spacing: 1px;
 }
 
+.sub-nav {
+  margin: 16px auto;
+}
+
 .concert-table {
   margin: 2rem auto;
   border-top: solid;
