@@ -29,7 +29,7 @@ p::first-letter {
 }
 
 .concert-table {
-  margin: 2rem;
+  margin: 2rem auto;
   border-top: solid;
   border-bottom: solid;
   border-collapse: separate;
@@ -90,6 +90,7 @@ blockquote footer::before {
 .video-wrap {
   width: 100%;
   max-width: 560px;
+  margin: 16px auto;
 }
 
 .video-container {

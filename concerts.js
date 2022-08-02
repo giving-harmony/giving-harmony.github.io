@@ -1,5 +1,5 @@
 const echo = {
-  title: 'The Echo',
+  title: '2021 The Echo',
   datetime: 'Sunday, Dec 5, 2021 6:30 pm',
   venue: [ 'Forum Theatre, Yorba Linda High School',
            '4175 Fairmont Blvd, Yorba Linda, CA 92886' ],
@@ -25,7 +25,7 @@ const echo = {
 };
 
 const dawn = {
-  title: 'The Dawn',
+  title: '2022 The Dawn',
   datetime: 'Sunday, May 22, 2022 6:00 pm',
   venue: [ 'Campus Theatre, Fullerton College',
            '321 E Chapman Ave, Fullerton, CA 92832' ],
