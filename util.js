@@ -2,7 +2,6 @@ function initVue() {
   Vue.component('concert-box', {
     props: ['concert'],
     template: '<div class="concert-box">' +
-                '<h2>{{ concert.title }}</h2>' +
                 '<table class="concert-table">' +
                 '<tr>' + 
                 '  <th>Date and Time</th>' +

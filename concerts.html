@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <link rel="stylesheet" href="https://unpkg.com/@mdi/font@6.x/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
       crossorigin="anonymous">
@@ -49,18 +50,25 @@
 
   <div class="container">
     <section class="py-5">
-      <a name="dawn"></a>
-      <div id="dawn-concert">
-        <concert-box v-bind:concert="concert">
-        </concert-box>
-      </div>
-
-      <a name="echo"></a>
-      <div id="echo-concert">
-        <concert-box v-bind:concert="concert">
-          <concert-video v-bind:url="concert.video"></concert-video>
-          <!-- <concert-program v-bind:program="concert.program"></concert-program> -->
-        </concert-box>
+      <div id="concerts">
+        <v-app>
+          <div class="sub-nav">
+            <v-chip v-for="(concert,i) in concerts" :key="i" 
+                    class="ma-2" color="primary" @click="open(i)">
+              {{ concert.title }}
+            </v-chip>
+          </div>
+          <v-expansion-panels v-model="panel">
+            <v-expansion-panel v-for="(concert,i) in concerts" :key="i">
+              <v-expansion-panel-header>{{ concert.title }}</v-expansion-panel-header>
+              <v-expansion-panel-content>
+                <concert-box class="center" v-bind:concert="concert">
+                  <concert-video v-if="concert.video" v-bind:url="concert.video"></concert-video>
+                </concert-box>
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
+        </v-app>
       </div>
     </section>
   </div>
@@ -72,19 +80,16 @@
     initVue();
 
     new Vue({
-      el: '#echo-concert',
-      data: () => {
-        return { concert: echo }
+      el: '#concerts',
+      vuetify: new Vuetify(),
+      data: { 
+        concerts: [ dawn, echo ],
+        panel: 0
+      },
+      methods: {
+        open(key) { this.panel = key; }
       }
     });
-
-    new Vue({
-      el: '#dawn-concert',
-      data: () => {
-        return { concert: dawn }
-      }
-    });
-
   </script>
 </body>
 </html>
