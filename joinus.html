@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
+      crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/vuetify@2.6.1/dist/vuetify.min.css"
+      integrity="sha384-E1svP7eBq8ni4Dr1nBNa/di3bB531yS+F05d7XbSj/Wtq3ZxGtaRknDeqiYfPTIA"
+      crossorigin="anonymous">
+  <link rel="stylesheet" href="./main.css">
+
+  <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"
+      integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" 
+      crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" 
+      crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/vue@2.6.14/dist/vue.min.js"
+      integrity="sha384-ULpZhk1pvhc/UK5ktA9kwb2guy9ovNSTyxPNHANnA35YjBQgdwI+AhLkixDvdlw4"
+      crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/vuetify@2.6.1/dist/vuetify.min.js"
+      integrity="sha384-5SpZuh3xGwZc7uucvuR3XDDyprv8b35+c0Souc0+16Mnx3jh2ZrGfSt2uM+LjaK3"
+      crossorigin="anonymous"></script>
+
+  <title>Giving Harmony</title>
+</head>
+
+<body>
+  <header class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#">G</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="concerts.html">Concerts</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Activities</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Join Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="container">
+    <div id="home" class="pb-5">
+      <v-app>
+        <div class="py-3">
+          <v-dialog v-model="dialog" width="480">
+            <template v-slot:activator="{ on, attrs }">
+              <p>Each year we invite gifted and dedicated young musicians who share our mission to join us. If interested, please check on the link below to find information on audition date and requirements.</p>
+              <v-btn color="accent" dark v-bind="attrs" v-on="on">Audition application</v-btn>
+            </template>
+    
+            <v-card>
+              <v-card-title class="text-h5 grey lighten-2">
+                Giving Harmony Audition Application
+              </v-card-title>
+              <v-card-text class="pt-3">
+                <p>Hello musicians and parents! Our organization Giving Harmony is looking for aspiring high school musicians and parents to join our non-profit to help us extend a helping hand with each note played! The audition date will be on <strong>July 17th, 2022</strong>. The deadline will be <strong>July 10th, 2022</strong>. Check out the <a href="https://forms.gle/kyFjauiqJGR3vamm7" target="_blank">application form</a>.</p>
+                <h5>Audition Requirements</h5>
+                <ul>
+                  <li>Must be an incoming high school student (9th - 12th grade)</li>
+                  <li>2 contrasting pieces for EACH instrument (i.e. 2 pieces from different time periods, a lyrical & technical piece)</li>
+                  <li>No piano accompanist required </li>
+                  <li>Bring a copy of the music for the judges</li>
+                  <li>Parents are strongly recommended to come to the audition</li>
+                  <li>We work as a big family to help those in need, so therefore parents are required to participate in the audition as parents will be helping out the organization as well</li>
+                  <li>Be prepared for a short interview session during your audition with you and your parents!</li>
+                </ul>
+              </v-card-text>
+              <v-divider></v-divider>
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn color="primary" text @click="dialog = false">Close</v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
+        </div>
+
+        <div class="py-3">
+          <v-tooltip right color="accent">
+            <template v-slot:activator="{ on, attrs }">
+              <p>We also welcome high school volunteers to join us and help with different aspects of operations and activities.</p>
+              <v-btn color="accent" dark v-bind="attrs" v-on="on" onclick="window.open('https://forms.gle/ik9x1dcL9yTmpZnV6', '_blank')">
+                Volunteer application  
+              </v-btn>
+            </template>
+            <span>High school volunteers wanted</span>
+          </v-tooltip>
+        </div>
+        <br/>
+        <div class="py-3">
+            <a id="contacts"></a>
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="mailto:mchow@givingharmony.org">General Coordinator</a></li>
+            </ul>
+        </div>
+      </v-app>
+    </div>
+  </div>
+
+  <script>
+    new Vue({
+      el: '#home',
+      vuetify: new Vuetify(),
+      data: () => {
+        let rawItems = [
+          [ './img/dawn.jpg', 'The Dawn at FC', 'May 22, 2022' ],
+          [ './img/echo.jpg', 'The Echo at YLHS', 'Dec 5, 2021' ],
+        ];
+        let items = [];
+
+        rawItems.forEach(e => {
+          items.push({ src: e[0], title: e[1], message: e[2] });
+        });
+
+        return { dialog: false, items: items };
+      }
+    })
+  </script>
+</body>
+</html>
