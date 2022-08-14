@@ -9,6 +9,9 @@ function initVue() {
                 '</tr><tr>' +
                 '  <th>Venue</th>' +
                 '  <td>{{ concert.venue[0] }}<br>{{ concert.venue[1] }}</td>' +
+                '</tr><tr>' +
+                '  <th>Beneficiary</th>' +
+                '  <td><a :href=concert.beneficiary[1] target="_blank">{{ concert.beneficiary[0] }}</a></td>' +
                 '</tr>' +
                 '</table>' +
                 '<img class="concert-poster figure-img img-fluid rounded mb-5" :src="concert.poster">' +

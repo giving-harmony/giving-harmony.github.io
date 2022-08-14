@@ -1,9 +1,19 @@
+const dawn = {
+  title: '2022 The Dawn',
+  datetime: 'Sunday, May 22, 2022 6:00 pm',
+  venue: [ 'Campus Theatre, Fullerton College',
+           '321 E Chapman Ave, Fullerton, CA 92832' ],
+  beneficiary: [ "Children's Health Orange County", 'https://raiseup.choc.org/event/ghthedawnconcert' ],
+  poster: 'img/dawn.jpg',
+};
+
 const echo = {
   title: '2021 The Echo',
   datetime: 'Sunday, Dec 5, 2021 6:30 pm',
   venue: [ 'Forum Theatre, Yorba Linda High School',
            '4175 Fairmont Blvd, Yorba Linda, CA 92886' ],
   poster: 'img/echo.jpg',
+  beneficiary: ['Malala Foundation', 'https://malala.org'],
   video: 'https://www.youtube.com/embed/98-eAkatJSY',
   program: [
     [ 'River Flows in You', 'Yiruma', 'Tina Hou, piano' ],
@@ -22,14 +32,6 @@ const echo = {
     [ 'Pezzo Cariccioso', 'Tchaikovsky', 'Ivette Chen, cello · Anna Huang, piano' ],
     [ 'Starlight', 'Bellamy; arr: Chow', 'Samantha Huang & Nadia Wang, soprano · Evelyn Wu & Anna Huang, flute · Ivette Chen, cello · Cathy Chen, guitar · Vella Feng & Tina Hou, piano' ],
   ]
-};
-
-const dawn = {
-  title: '2022 The Dawn',
-  datetime: 'Sunday, May 22, 2022 6:00 pm',
-  venue: [ 'Campus Theatre, Fullerton College',
-           '321 E Chapman Ave, Fullerton, CA 92832' ],
-  poster: 'img/dawn.jpg',
 };
 
 export { dawn, echo };
