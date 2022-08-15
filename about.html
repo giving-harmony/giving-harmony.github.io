@@ -56,26 +56,17 @@
 
       <p>Giving Harmony Foundation is a non-profit organization. We donate all the proceeds of our concerts to help people in need.</p>
 
-      <h2>Team</h2>
       <div id="team">
-        <v-card v-for="(member,i) in members" :key="i" class="mx-auto my-5">
-          <v-card-title>{{member.name}}</v-card-title>
-          <v-card-subtitle>{{member.title}}</v-card-subtitle>
-          <v-card-text>{{member.bio}}</v-card-text>
-          <v-divider class="mx-4"></v-divider>
-          <v-card-text>{{member.slogan}}</v-card-text>
-        </v-card>
-      </div>
-    </section>
+        <h2>Team</h2>
+        <div v-for="(member,i) in members" :key="i" class="mx-auto my-3">
+          <member-card v-bind:member="member"></member-card>
+        </div>
 
-    <section class="py-3">
-      <a id="beneficaries"></a>
-      <h1>Beneficiaries</h1>
-      <p>People in need.</p>
-      <ul>
-        <li><a href="https://malala.org" target="_blank">Malala Foundation</a></li>
-        <li><a href="https://raiseup.choc.org/event/ghthedawnconcert" target="_blank">Children's Health Orange County</a></li>
-      </ul>
+        <h2>Alumni</h2>
+        <div v-for="(member,i) in alumni" :key="i" class="mx-auto my-3">
+          <member-card v-bind:member="member"></member-card>
+        </div>
+      </div>
     </section>
 
     <section class="py-3">
@@ -88,63 +79,17 @@
 
   </div>
 
-  <script>
+  <script type="module">
+    import { alumni, members, initAboutComponents } from './about.js';
+
+    initAboutComponents();
+
     new Vue({
       el: '#team',
       vuetify: new Vuetify(),
       data: {
-        members: [
-          {
-            name: 'Cathy Chen',
-            title: 'former president, pianist, guitarist',
-            bio: 'Cathy Chen, seventeen years old, is a pianist and guitarist that is currently a senior at Troy High School. Her passion extends beyond music and academics, as she is the news editor of the campus newspaper production group. Cathy aspires to work in the medical field in the future to help people at their most vulnerable times.',
-            slogan: "I can make a change in the world while enjoying music. Now that's what you call two birds with one stone."
-          }, {
-            name: 'Ivette Chen',
-            title: 'chief supervisor, former president, cellist',
-            bio: "Selected from the top young musicians worldwide, cellist Ivette Chen is one of the quarterfinalists chosen to compete in the International Tchaikovsky Competition at Moscow, Russia. Ivette has been a prizewinner for many international competitions and has performed at various venues, including Carnegie's Stern Auditorium, Irvine's Barclay Theatre, and UCLA's Royce Hall for Lynn Harrell's “In Remembrance” Concert. She has also been a full scholarship recipient to the prestigious Chamber Music | OC program. Ivette is a senior at Troy High School where she is involved in the NJROTC program and is also the co-president of Giving Harmony. She enjoys giving back to the community through music and aspires to tie music into medicine to help prevent neurological disorders in the future.",
-            slogan: "There are people in the world who do not have the privileges that are present in our life. Let's help those people gain those benefits. Each note played out extends a helping hand."
-          }, {
-            name: 'Vella Feng',
-            title: 'president, pianist',
-            bio: 'Vella Feng, pianist and artist, is currently a junior studying in the Visual Art Conservatory at Orange County School of the Arts. She is also a director and screenwriter for multiple short films and was awarded several international prizes. With a wide range of hobbies and artistic accomplishments, Vella contributes to the betterment of society through her talents.',
-            slogan: "Giving harmony isn't just a place where we play music, but a place we bring love and joys."
-          }, {
-            name: 'Evelyn Wu',
-            title: 'president, flutist',
-            bio: 'Evelyn Wu is a high school junior and has been playing the flute for 9 years. She has been a part of many well established ensembles including the Pacific Symphony Youth Wind Ensemble currently in 2022, Orange County Youth Wind Ensemble between 2020-2021, and Diamond Symphony Youth Orchestra between 2019-2020. She has performed in Carnegie Hall after being the first place winner of the Spring 2017 International Music Talent Competition, age 6-12 category of the American Protege, and is also the second place winner of the 2018 Musical Arts Competition of Orange County. In her free time, she enjoys reading, baking, and drawing.',
-            slogan: 'Using music, I want to do for some what I wish I could do for all.'
-          }, {
-            name: 'Kerry Wang',
-            title: 'vice president, violinist',
-            bio: "Kerry Wang, currently attending Valencia High School and current IB / Val Tech dual diploma candidate. Kerry plays violin and piano and is a current member of the school's Sinfonia Orchestra as well as Chamber Music Institute. She is part of the school's M.U.S.I.C. club and has performed at assisted living facilities. Kerry has tutored students both academically and musically for some years and wishes to continue to help the community in any way possible.",
-            slogan: 'Music accentuates purpose, enhances connections, and evokes emotions. May music connect us all to give each other a helping hand.'
-          }, {
-            name: 'Anna Huang',
-            title: 'vice president, pianist, flutist',
-            bio: 'Beginning her artistic journey at a young age, Anna Huang uses her passion in the arts of both music and writing. Currently a sophomore, Anna attends Orange County School of the Arts in its Creative Writing Conservatory. Mainly focusing on the piano, she has dabbled in a few other instruments, the flute notably included. In her devotion to music, she has won multiple music competitions, including the MTAC Piano Ensemble Festival, Orange County Solo Competitions (2017-19), and more. Most recently, she won first place for the Golden Classical Music Award, leading her to a performance at Carnegie Hall. She has since learned to express her emotions through art and in recent years hopes to ignite a path for others to follow their dreams.',
-            slogan: 'Our music brings harmony, and your love brings change.'
-          }, {
-            name: 'Tina Hou',
-            title: 'pianist',
-            bio: "As a freshman at The Vivian Webb School, Tina Hou is a pianist that hopes to support her community with her music. She has earned multiple awards in musical events such as the MTAC Piano Ensemble Festival, Orange County North Solo Competition, and more. Besides playing the piano, she is also a passionate language learner. She's fluent in Mandarin and English, and has been studying Japanese and Spanish since 7th grade. Tina strives to aid more people from around the globe with her knowledge of various languages. Taking her first step, she is currently teaching English to elementary school students in China via online meetings.",
-            slogan: 'I wish my music can arose more kindness in everyone. Let this kindess flow into the hearts of those who seek support. In their hearts, may hope be planted and may happiness blossom.'
-          }, {
-            name: 'Samantha Huang',
-            title: 'singer',
-            bio: "Samantha Huang is currently a freshman at Diamond Bar High School. She is in the school's award winning show choir, as well as the dance ensemble, and a member of the Key Club. Outside of school, she enjoys singing, listening to music, taking dance classes, and spending time with her friends and family. She loves to participate in community service, and hopes to showcase her positive energy when performing to bring happiness to others.",
-            slogan: 'Music is a universal language. To me, music is a way to express and communicate emotions to people you may not know.'
-          }, {
-            name: 'Nadia Wang',
-            title: 'pianist, singer',
-            bio: 'Nadia Wang is a freshman in Diamond Bar High School. She started studying piano at the age of 4 and has since won many competitions including LA Young Pianists, Elite International Music, Colibri International, International Keyboard Odyssiad & Festival, DBHS Concerto, SCP Concerto, and more. She performed in Carnegie Hall in 2018 and in 2020 she performed as a piano soloist with the SCP Orchestra. Nadia also enjoys volunteering her time by performing in senior centers throughout the Southland. In addition to playing piano, Nadia likes to sing, dance, read, and compose music.',
-            slogan: 'Through music, I would like to make change and help those who are less fortunate in this world.'
-          }, {
-            name: 'Thomas Wu',
-            title: 'pianist',
-            bio: 'Thomas Wu, a sophomore student at Valencia High School, started playing piano at age eight and is the newest addition to Giving Harmony. In addition to playing music, Thomas enjoys videography, tinkering with computer keyboards, and traveling to new destinations.'
-          }
-        ]
+        alumni: alumni,
+        members: members
       }
     });
   </script>
