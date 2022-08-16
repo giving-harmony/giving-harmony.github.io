@@ -11,7 +11,7 @@ const members = [
     slogan: "Giving harmony isn't just a place where we play music, but a place we bring love and joys."
   }, {
     name: 'Evelyn Wu, founding member',
-    title: 'president, flutist',
+    title: 'co-president (2022 --), flutist',
     bio: 'Evelyn Wu is a high school junior and has been playing the flute for 9 years. She has been a part of many well established ensembles including the Pacific Symphony Youth Wind Ensemble currently in 2022, Orange County Youth Wind Ensemble between 2020-2021, and Diamond Symphony Youth Orchestra between 2019-2020. She has performed in Carnegie Hall after being the first place winner of the Spring 2017 International Music Talent Competition, age 6-12 category of the American Protege, and is also the second place winner of the 2018 Musical Arts Competition of Orange County. In her free time, she enjoys reading, baking, and drawing.',
     slogan: 'Using music, I want to do for some what I wish I could do for all.'
   }, {
@@ -43,6 +43,10 @@ const members = [
     name: 'Thomas Wu, member since 2021',
     title: 'pianist',
     bio: 'Thomas Wu, a sophomore student at Valencia High School, started playing piano at age eight and is the newest addition to Giving Harmony. In addition to playing music, Thomas enjoys videography, tinkering with computer keyboards, and traveling to new destinations.'
+  }, {
+    name: 'Chloe Wei, member since 2022',
+    title: 'pianist, cellist, violinist',
+    bio: 'Pianist, cellist, violinist, and striving composer, Chloe Wei is a passionate musician who hopes to inspire people with her music. She has participated in MTAC Music Festivals for 4 years, Youth SCSBOA Honor Orchestra for 2 years with cello and violin, JCM, and Pacific Symphony Santiago Strings. She was also selected to present her improvised song for an MTAC Convention in 2021. Chloe is a freshman at Orange Lutheran and hopes to do many things in the future with music.'
   }
 ];
 
