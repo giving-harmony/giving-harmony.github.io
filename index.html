@@ -30,23 +30,7 @@
 </head>
 
 <body>
-  <header class="navbar navbar-expand-md navbar-light bg-light">
-    <a class="navbar-brand" href="#">G</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="concerts.html">Concerts</a></li>
-        <li class="nav-item"><a class="nav-link" href="gallery.html">Activities</a></li>
-        <li class="nav-item"><a class="nav-link" href="joinus.html">Join Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-      </ul>
-    </div>
-  </header>
+  <header class="navbar navbar-expand-md navbar-light bg-light"></header>
 
   <div class="container">
     <div class="text-center py-5">
@@ -104,19 +88,18 @@
           </ul>
         </div>
         <div class="col-6 col-md">
-          <h5>Gallery</h5>
+          <h5>Activities</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="gallery.html#echo">2021 The Echo</a></li>
-            <li><a class="text-muted" href="gallery.html#2021-cast">2021 Summer Gathering</a></li>
-            <li><a class="text-muted" href="gallery.html#2021-tutoring">2021 Summer Tutoring</a></li>
-            <li><a class="text-muted" href="gallery.html#2019-cast">2019 Young Musicians </a></li>
+            <li><a class="text-muted" href="activities.html#echo">2021 The Echo</a></li>
+            <li><a class="text-muted" href="activities.html#2021-cast">2021 Summer Gathering</a></li>
+            <li><a class="text-muted" href="activities.html#2021-tutoring">2021 Summer Tutoring</a></li>
+            <li><a class="text-muted" href="activities.html#2019-cast">2019 Young Musicians </a></li>
           </ul>
         </div>
         <div class="col-6 col-md">
           <h5>About</h5>
           <ul class="list-unstyled text-small">
             <li><a class="text-muted" href="about.html#us">Us</a></li>
-            <li><a class="text-muted" href="about.html#beneficaries">Beneficiaries</a></li>
             <li><a class="text-muted" href="about.html#contacts">Contacts</a></li>
           </ul>
         </div>
@@ -132,7 +115,11 @@
     </footer>
   </div>
 
-  <script>
+  <script type="module">
+    import { navBar } from './nav.js';
+
+    $('header.navbar').append(navBar('Home', 0));
+
     new Vue({
       el: '#home',
       vuetify: new Vuetify(),
