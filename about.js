@@ -47,6 +47,10 @@ const members = [
     name: 'Chloe Wei, member since 2022',
     title: 'pianist, cellist, violinist',
     bio: 'Pianist, cellist, violinist, and striving composer, Chloe Wei is a passionate musician who hopes to inspire people with her music. She has participated in MTAC Music Festivals for 4 years, Youth SCSBOA Honor Orchestra for 2 years with cello and violin, JCM, and Pacific Symphony Santiago Strings. She was also selected to present her improvised song for an MTAC Convention in 2021. Chloe is a freshman at Orange Lutheran and hopes to do many things in the future with music.'
+  }, {
+    name: 'David Wong, member since 2022',
+    title: 'oboist, pianist',
+    bio: "David Wong, age thirteen, is a current freshman at the Orange County School of the Arts (OCSA). He was recognized and served as the first chair oboist of the 2022 California All-State Honor Band and California All-Southern Honor Band. In addition, David is an oboist for the prestigious Pacific Youth Symphony Orchestra (PSYO). His other awards in oboe include winner of the Concordia University Music Competition and the American Fine Arts Festival International Concerto Competition, where he performed at Carnegie Hall in June 2022. Outside of oboe, David also excels at playing the piano: at eleven years old, he performed piano at Carnegie Hall, and this year, he is moving on to advanced Level 10 of MTAC's Certificate of Merit Program. David is passionate about harnessing music to serve his communities and plays for his local lacrosse team."
   }
 ];
 
