@@ -1,25 +1,18 @@
-const events2021 = [
+const events2022 = [
   {
-    name: 'The Echo',
-    date: 'December 5th',
+    name: 'College Admission Sharing',
+    date: 'May 13th',
     desc: '',
     pics: [
-      './img/pc055426.jpg',
-      './img/pc055453.jpg',
-      './img/pc055504.jpg',
-      './img/pc055574.jpg',
-      './img/pc055649.jpg',
-      './img/pc055842.jpg',
-      './img/pc055908.jpg',
-      './img/pc056011.jpg',
-      './img/pc056165.jpg',
-      './img/pc056267.jpg',
-      './img/pc056359.jpg',
-      './img/pc056443.jpg',
-      './img/pc056556.jpg',
-      './img/pc056617.jpg',
+      './img/college_sharing_2201.jpg',
+      './img/college_sharing_2202.jpg',
+      './img/college_sharing_2203.jpg',
+      './img/college_sharing_2204.jpg',
     ]
-  },
+  }
+];
+
+const events2021 = [
   {
     name: 'Summer Gathering',
     date: 'August',
@@ -67,7 +60,10 @@ const events2019 = [
 ];
 
 const yearlyEvents = [
-  {
+  { 
+    year: 2022,
+    events: events2022
+  }, {
     year: 2021,
     events: events2021 
   }, {
@@ -76,24 +72,4 @@ const yearlyEvents = [
   }
 ];
 
-function initGalleryComponents() {
-  Vue.component('gallery', {
-    props: ['event', 'showTitle'],
-    template: '<div class="imageitem">' +
-              '  <v-card elevation="2" class="gallery">' +
-              '    <v-card-title v-if=showTitle>{{ `${event.name}, ${event.date}` }}</v-card-title>' +
-              '    <v-carousel eager>' +
-              '      <v-carousel-item' +
-              '        v-for="item in event.pics"' +
-              '        :src=item' +
-              '        reverse-transition="fade-transition"' +
-              '        transition="fade-transition"' +
-              '        ripple="true"' +
-              '      ></v-carousel-item>' +
-              '    </v-carousel>' +
-              '  </v-card>' +
-              '</div>'
-  });
-};
-
-export { yearlyEvents, initGalleryComponents };
+export { yearlyEvents };

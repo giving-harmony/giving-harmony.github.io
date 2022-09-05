@@ -60,7 +60,8 @@
 
   <script type="module">
     import { navBar } from './nav.js';
-    import { yearlyEvents, initGalleryComponents } from './events.js';
+    import { yearlyEvents } from './events.js';
+    import { initGalleryComponents } from './util.js';
 
     $('header.navbar').append(navBar('Activities', 0));
     initGalleryComponents();

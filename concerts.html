@@ -47,8 +47,10 @@
             <v-expansion-panel v-for="(concert,i) in concerts" :key="i">
               <v-expansion-panel-header>{{ concert.title }}</v-expansion-panel-header>
               <v-expansion-panel-content>
-                <concert-box class="center" v-bind:concert="concert">
-                  <concert-video v-if="concert.video" v-bind:url="concert.video"></concert-video>
+                <concert-box class="center" :concert="concert">
+                  <concert-video v-if="concert.video" :url="concert.video"></concert-video>
+                  <hr v-if="concert.pics" />
+                  <gallery v-if="concert.pics" v-bind:event="concert" :showTitle="false" class="my-5"></gallery>
                 </concert-box>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -60,12 +62,12 @@
 
   <script type="module">
     import { navBar } from './nav.js';
-    import { dawn, echo } from './concerts.js';
-    import { initVue } from './util.js';
+    import { dawn, echo, initConcertComponents } from './concerts.js';
+    import { initGalleryComponents } from './util.js';
 
     $('header.navbar').append(navBar('Concerts', 0));
-
-    initVue();
+    initConcertComponents();
+    initGalleryComponents();
 
     new Vue({
       el: '#concerts',

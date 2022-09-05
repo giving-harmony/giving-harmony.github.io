@@ -12,8 +12,24 @@ const echo = {
   datetime: 'Sunday, Dec 5, 2021 6:30 pm',
   venue: [ 'Forum Theatre, Yorba Linda High School',
            '4175 Fairmont Blvd, Yorba Linda, CA 92886' ],
-  poster: 'img/echo.jpg',
   beneficiary: ['Malala Foundation', 'https://malala.org'],
+  poster: 'img/echo.jpg',
+  pics: [
+    './img/pc055426.jpg',
+    './img/pc055453.jpg',
+    './img/pc055504.jpg',
+    './img/pc055574.jpg',
+    './img/pc055649.jpg',
+    './img/pc055842.jpg',
+    './img/pc055908.jpg',
+    './img/pc056011.jpg',
+    './img/pc056165.jpg',
+    './img/pc056267.jpg',
+    './img/pc056359.jpg',
+    './img/pc056443.jpg',
+    './img/pc056556.jpg',
+    './img/pc056617.jpg',
+  ],
   video: 'https://www.youtube.com/embed/98-eAkatJSY',
   program: [
     [ 'River Flows in You', 'Yiruma', 'Tina Hou, piano' ],
@@ -34,4 +50,45 @@ const echo = {
   ]
 };
 
-export { dawn, echo };
+function initConcertComponents() {
+  Vue.component('concert-box', {
+    props: ['concert'],
+    template: '<div class="concert-box">' +
+                '<table class="concert-table">' +
+                '<tr>' + 
+                '  <th>Date and Time</th>' +
+                '  <td>{{ concert.datetime }}</td>' +
+                '</tr><tr>' +
+                '  <th>Venue</th>' +
+                '  <td>{{ concert.venue[0] }}<br>{{ concert.venue[1] }}</td>' +
+                '</tr><tr>' +
+                '  <th>Beneficiary</th>' +
+                '  <td><a :href=concert.beneficiary[1] target="_blank">{{ concert.beneficiary[0] }}</a></td>' +
+                '</tr>' +
+                '</table>' +
+                '<img class="concert-poster figure-img img-fluid rounded" :src="concert.poster">' +
+                '<slot></slot>' +
+              '</div>'
+  });
+
+  Vue.component('concert-video', {
+    props: ['url'],
+    template: '<div class="video-wrap mb-5"><div class="video-container">' +
+                '<iframe :src="url" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' +
+              '</div></div>'
+  });
+
+  Vue.component('concert-program', {
+    props: ['program'],
+    template: '<div class="concert-program">' +
+                '<h3>Concert Program</h3>' +
+                '<v-card v-for="(item,i) in program" :key="i" class="mx-auto my-3">' +
+                  '<v-card-title>{{item[0]}}</v-card-title>' +
+                  '<v-card-subtitle>composer(s): {{item[1]}}</v-card-subtitle>' +
+                  '<v-card-text>performer(s): {{item[2]}}</v-card-text>' +
+                '</v-card>' +
+              '</div>'
+  });
+}
+
+export { dawn, echo, initConcertComponents };
