@@ -35,69 +35,16 @@
   <header class="navbar navbar-expand-md navbar-light bg-light"></header>
 
   <div class="container">
-    
     <div id="galleries" class="py-5">
       <v-app>
-	    <div class="imageitem">
-          <a name="echo"></a>
-          <v-card elevation="2" class="gallery">
-            <v-card-title>2021 The Echo</v-card-title>
-            <v-carousel eager>
-              <v-carousel-item
-                v-for="(item,i) in echo"
-                :key="i"
-                :src="item.src"
-                reverse-transition="fade-transition"
-                transition="fade-transition"
-                ripple="true"
-              ></v-carousel-item>
-            </v-carousel>
-          </v-card>
+        <h1>2021</h1>
+        <div v-for="(event,i) in events2021" :key="i" class="mx-auto my-3">
+          <event-box v-bind:event="event"></event-box>
         </div>
-        <div class="imageitem">
-          <a name="2021-cast"></a>
-          <v-card elevation="2" class="gallery">
-            <v-card-title>2021 Summer Gathering</v-card-title>
-            <v-carousel eager>
-              <v-carousel-item
-                v-for="(item,i) in cast2021"
-                :key="i"
-                :src="item.src"
-                reverse-transition="fade-transition"
-                transition="fade-transition"
-              ></v-carousel-item>
-            </v-carousel>
-          </v-card>
-        </div>
-        <div class="imageitem">
-          <a name="2021-tutoring"></a>
-          <v-card elevation="2" class="gallery">
-            <v-card-title>2021 Summer Tutoring</v-card-title>
-              <v-carousel eager>
-                <v-carousel-item
-                  v-for="(item,i) in tutoring2021"
-                  :key="i"
-                  :src="item.src"
-                  reverse-transition="fade-transition"
-                  transition="fade-transition"
-                ></v-carousel-item>
-            </v-carousel>
-          </v-card>
-        </div>
-        <div class="imageitem">
-          <a name="2019-cast"></a>
-          <v-card elevation="2" class="gallery">
-            <v-card-title>2019 Young Musicians</v-card-title>
-            <v-carousel eager>
-              <v-carousel-item
-                v-for="(item,i) in cast2019"
-                :key="i"
-                :src="item.src"
-                reverse-transition="fade-transition"
-                transition="fade-transition"
-              ></v-carousel-item>
-            </v-carousel>
-          </v-card>
+
+        <h1>2019</h1>
+        <div v-for="(event,i) in events2019" :key="i" class="mx-auto my-3">
+          <event-box v-bind:event="event"></event-box>
         </div>
       </v-app>
     </div>
@@ -105,55 +52,17 @@
 
   <script type="module">
     import { navBar } from './nav.js';
+    import { events2021, events2019, initEventComponents } from './events.js';
 
     $('header.navbar').append(navBar('Activities', 0));
+    initEventComponents();
 
     new Vue({
       el: '#galleries',
       vuetify: new Vuetify(),
       data: {
-        echo: [
-          { src: './img/pc055426.jpg', },
-          { src: './img/pc055453.jpg', },
-          { src: './img/pc055504.jpg', },
-          { src: './img/pc055574.jpg', },
-          { src: './img/pc055649.jpg', },
-          { src: './img/pc055842.jpg', },
-          { src: './img/pc055908.jpg', },
-          { src: './img/pc056011.jpg', },
-          { src: './img/pc056165.jpg', },
-          { src: './img/pc056267.jpg', },
-          { src: './img/pc056359.jpg', },
-          { src: './img/pc056443.jpg', },
-          { src: './img/pc056556.jpg', },
-          { src: './img/pc056617.jpg', },
-        ],
-        cast2021: [
-          { src: './img/dsc_0048.jpg', },
-          { src: './img/dsc_0053.jpg', },
-          { src: './img/dsc_0069.jpg', },
-          { src: './img/dsc_9922.jpg', },
-          { src: './img/dsc_9945.jpg', },
-          { src: './img/dsc_9997.jpg', },
-        ],
-        tutoring2021: [
-          { src: './img/cathy01.png', },
-          { src: './img/cathy02.png', },
-          { src: './img/ivette01.jpg', },
-          { src: './img/ivette02.jpg', },
-          { src: './img/ivette03.jpg', },
-          { src: './img/ivette04.jpg', },
-          { src: './img/kerry01.jpg', },
-          { src: './img/kerry02.jpg', },
-          { src: './img/anna01.jpg', },
-          { src: './img/anna02.jpg', },
-          { src: './img/anna03.png', },
-        ],
-        cast2019: [
-          { src: './img/190846.jpg', },
-          { src: './img/190847.jpg', },
-          { src: './img/190848.jpg', },
-        ],
+        events2021: events2021,
+        events2019: events2019,
       },
     });
 
