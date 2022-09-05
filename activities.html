@@ -37,33 +37,44 @@
   <div class="container">
     <div id="galleries" class="py-5">
       <v-app>
-        <h1>2021</h1>
-        <div v-for="(event,i) in events2021" :key="i" class="mx-auto my-3">
-          <event-box v-bind:event="event"></event-box>
+        <div class="sub-nav">
+          <v-chip v-for="(data,i) in yearlyEvents" :key="i" 
+                  class="ma-2" color="primary" @click="open(i)">
+            {{ data.year }}
+          </v-chip>
         </div>
 
-        <h1>2019</h1>
-        <div v-for="(event,i) in events2019" :key="i" class="mx-auto my-3">
-          <event-box v-bind:event="event"></event-box>
-        </div>
+        <v-expansion-panels v-model="panel">
+          <v-expansion-panel v-for="(data,i) in yearlyEvents" :key="i">
+            <v-expansion-panel-header>{{ data.year }}</v-expansion-panel-header>
+            <v-expansion-panel-content>
+              <div v-for="(event,i) in data.events" :key="i" class="mx-auto my-3">
+                <gallery :event="event" :show-title="true"></gallery>
+              </div>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
       </v-app>
     </div>
   </div>
 
   <script type="module">
     import { navBar } from './nav.js';
-    import { events2021, events2019, initEventComponents } from './events.js';
+    import { yearlyEvents, initGalleryComponents } from './events.js';
 
     $('header.navbar').append(navBar('Activities', 0));
-    initEventComponents();
+    initGalleryComponents();
 
     new Vue({
       el: '#galleries',
       vuetify: new Vuetify(),
       data: {
-        events2021: events2021,
-        events2019: events2019,
+        yearlyEvents: yearlyEvents,
+        panel: 0
       },
+      methods: {
+        open(key) { this.panel = key; }
+      }
     });
 
   </script>

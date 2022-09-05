@@ -66,12 +66,22 @@ const events2019 = [
   }
 ];
 
-function initEventComponents() {
-  Vue.component('event-box', {
-    props: ['event'],
+const yearlyEvents = [
+  {
+    year: 2021,
+    events: events2021 
+  }, {
+    year: 2019,
+    events: events2019
+  }
+];
+
+function initGalleryComponents() {
+  Vue.component('gallery', {
+    props: ['event', 'showTitle'],
     template: '<div class="imageitem">' +
               '  <v-card elevation="2" class="gallery">' +
-              '    <v-card-title>{{ `${event.name}, ${event.date}` }}</v-card-title>' +
+              '    <v-card-title v-if=showTitle>{{ `${event.name}, ${event.date}` }}</v-card-title>' +
               '    <v-carousel eager>' +
               '      <v-carousel-item' +
               '        v-for="item in event.pics"' +
@@ -86,4 +96,4 @@ function initEventComponents() {
   });
 };
 
-export { events2021, events2019, initEventComponents };
+export { yearlyEvents, initGalleryComponents };
