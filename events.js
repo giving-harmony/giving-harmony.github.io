@@ -1,5 +1,17 @@
 const events2022 = [
   {
+    name: 'Park Terrace Concert',
+    date: 'August 15th',
+    desc: '',
+    pics: [
+      './img/2208_park_terrace/mmexport1660800653431.jpg',
+      './img/2208_park_terrace/mmexport1660800685820.jpg',
+      './img/2208_park_terrace/mmexport1660800786300.jpg',
+      './img/2208_park_terrace/pxl_20220815_222924366.jpg',
+      './img/2208_park_terrace/pxl_20220815_224424864.jpg',
+    ]
+  },
+  {
     name: 'College Admission Sharing',
     date: 'May 13th',
     desc: '',
