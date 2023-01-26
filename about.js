@@ -22,7 +22,7 @@ const members = [
   }, {
     name: 'Anna Huang, founding member',
     title: 'vice president (2022 --), pianist, flutist',
-    bio: "Anna is a junior at Orange County School of the Arts in its Creative Writing Conservatory. As a young artist, she aspires to grow her skills as a writer and flutist. Anna is also a devoted pianist and has won multiple competitions. In recent years, Anna was a first-place winner of the Golden Classical Music Award International Competition and performed at Carnegie Hall (2021). She won second place in the American Protégé International Competition for Romantic Music (2022) and will be invited back to Carnegie Hall in 2023. Aside from music, Anna enjoys reading with her cat, building Legos, and volunteering at her church's Sunday school. She lives day by day hoping to teach others all that the world has taught her.",
+    bio: "Anna is a junior studying at Orange County School of the Arts in its Creative Writing Conservatory. As a young artist, she aspires to grow her skills as a writer and flutist. Anna is also a devoted pianist and has won multiple competitions. In recent years, Anna was chosen first-place winner of the Golden Classical Music Award International Competition and performed at Carnegie Hall (2021). She won second place in the American Protégé International Competition for Romantic Music (2022) and will be invited back to Carnegie Hall in 2023. Aside from music, Anna enjoys reading with her cat, building Legos, and volunteering at her church's Sunday school. She lives day-by-day hoping to teach others all those the world has taught her.",
     slogan: 'Our music brings harmony, and your love brings change.'
   }, {
     name: 'Tina Hou, member since 2021',
