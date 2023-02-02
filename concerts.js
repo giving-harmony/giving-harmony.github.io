@@ -5,6 +5,12 @@ const dawn = {
            '321 E Chapman Ave, Fullerton, CA 92832' ],
   beneficiary: [ "Children's Health Orange County", 'https://raiseup.choc.org/event/ghthedawnconcert' ],
   poster: 'img/dawn.jpg',
+  pics: [
+    './img/dawn/p5223226.jpg',
+    './img/dawn/mmexport1675310301708.jpg',
+    './img/dawn/mmexport1675310311381.jpg',
+    './img/dawn/p5224729.jpg',
+  ]
 };
 
 const echo = {
