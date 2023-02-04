@@ -4,7 +4,7 @@ const dawn = {
   venue: [ 'Campus Theatre, Fullerton College',
            '321 E Chapman Ave, Fullerton, CA 92832' ],
   beneficiary: [ "Children's Health Orange County", 'https://raiseup.choc.org/event/ghthedawnconcert' ],
-  poster: 'img/dawn.jpg',
+  poster: 'img/dawn/dawn.jpg',
   pics: [
     './img/dawn/p5223226.jpg',
     './img/dawn/mmexport1675310301708.jpg',
@@ -19,7 +19,7 @@ const echo = {
   venue: [ 'Forum Theatre, Yorba Linda High School',
            '4175 Fairmont Blvd, Yorba Linda, CA 92886' ],
   beneficiary: ['Malala Foundation', 'https://malala.org'],
-  poster: 'img/echo.jpg',
+  poster: 'img/echo/echo.jpg',
   pics: [
     './img/echo/pc055426.jpg',
     './img/echo/pc055453.jpg',
