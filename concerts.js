@@ -1,3 +1,12 @@
+const journey = {
+  title: '2023 The Journey',
+  datetime: 'Sunday, Mar 26, 2023 6:00 pm',
+  venue: [ 'Performing Arts Center, El Dorado High School',
+           '1651 Valencia Ave, Placentia, CA 92870' ],
+  beneficiary: [ 'Guide Dogs of America', 'https://www.guidedogsofamerica.org' ],
+  poster: 'img/journey/journey.jpg'
+};
+
 const dawn = {
   title: '2022 The Dawn',
   datetime: 'Sunday, May 22, 2022 6:00 pm',
@@ -97,4 +106,4 @@ function initConcertComponents() {
   });
 }
 
-export { dawn, echo, initConcertComponents };
+export { journey, dawn, echo, initConcertComponents };
