@@ -42,20 +42,20 @@
 
     <div id="home" class="pt-5">
       <v-app>
-        <!-- <div class="py-3">
+        <div class="py-3">
           <v-tooltip right color="accent">
             <template v-slot:activator="{ on, attrs }">
-              <v-btn color="primary" dark v-bind="attrs" v-on="on" onclick="window.open('https://www.eventbrite.com/e/328576831147', '_blank')">
-                Tickets of "The Dawn" benefit concert 
+              <v-btn color="primary" dark v-bind="attrs" v-on="on" onclick="window.open('https://www.eventbrite.com/e/the-journey-concert-tickets-543291307927', '_blank')">
+                Tickets of "The Journey" benefit concert 
               </v-btn>
             </template>
-            <span>Proceed goes to Children's Healthcare Orange County</span>
+            <span>Proceed goes to Guide Dogs of America</span>
           </v-tooltip>
-        </div> -->
+        </div>
         <v-row class="mt-5">
           <v-col v-for="(item,i) in items" :key="i" cols="12" sm="6" class="d-flex" style="flex-direction:column">
             <v-card elevation="2">
-              <v-img :src="item.src" class="grey lighten-2" contain></v-img>
+              <v-img :src="item.src" class="grey lighten-2" :aspect-ratio="640/1024" contain></v-img>
               <v-card-title>{{item.title}}</v-card-title>
               <v-card-actions>
 				        <v-btn :href="item.benificiaryLink" target="_blank"

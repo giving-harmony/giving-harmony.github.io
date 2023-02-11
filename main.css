@@ -90,6 +90,10 @@ blockquote footer::before {
   right: 0;
 }
 
+.v-image__image--contain {
+  background-size: 100% 100%;
+}
+
 /* And set the max-width of the parent element */
 .video-wrap {
   width: 100%;
