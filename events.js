@@ -1,5 +1,17 @@
 const events2022 = [
   {
+    name: 'Summer Gathering',
+    date: 'August',
+    desc: '',
+    pics: [
+      './img/22_summer_gathering/dsc_4677.jpg',
+      './img/22_summer_gathering/dsc_4692.jpg',
+      './img/22_summer_gathering/dsc_4841.jpg',
+      './img/22_summer_gathering/dsc_5016.jpg',
+      './img/22_summer_gathering/dsc_5053.jpg',
+      './img/22_summer_gathering/dsc_5083.jpg',
+    ]
+  }, {
     name: 'Park Terrace Concert',
     date: 'August 15th',
     desc: '',
@@ -10,8 +22,7 @@ const events2022 = [
       './img/2208_park_terrace/pxl_20220815_222924366.jpg',
       './img/2208_park_terrace/pxl_20220815_224424864.jpg',
     ]
-  },
-  {
+  }, {
     name: 'College Admission Sharing',
     date: 'May 13th',
     desc: '',
@@ -37,8 +48,7 @@ const events2021 = [
       './img/21_summer_gathering/dsc_9945.jpg',
       './img/21_summer_gathering/dsc_9997.jpg',
     ]
-  },
-  {
+  }, {
     name: 'Summer Tutoring',
     date: 'June -- August',
     desc: '',
