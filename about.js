@@ -62,7 +62,7 @@ const alumni = [
   {
     name: 'Cathy Chen, founding member',
     title: 'former co-president (2019 -- 2022), pianist, guitarist',
-    bio: 'Cathy Chen, seventeen years old, is a pianist and guitarist that is currently a senior at Troy High School. Her passion extends beyond music and academics, as she is the news editor of the campus newspaper production group. Cathy aspires to work in the medical field in the future to help people at their most vulnerable times.',
+    bio: 'Cathy Chen, eighteen years old, is a pianist and guitarist who is currently attending the University of California - San Diego. She is actively involved in cancer genomics computational research in the university’s Ongkeko Lab. Her passion extends beyond music and academics, as she volunteers weekly at the Jacobs Medical Center on the bone marrow transplant floor in hopes of helping cancer patients and the hospital staff. Cathy aspires to work in the medical field in the future to help people at their most vulnerable times.',
     slogan: "I can make a change in the world while enjoying music. Now that’s what you call two birds with one stone."
   }
 ];
