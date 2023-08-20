@@ -57,7 +57,7 @@ const alumni = [
   }, {
     name: 'Vella Feng, founding member',
     title: 'former co-president (2022 -- 2023), pianist',
-    bio: 'Vella Feng, eighteen years old, is the president of Giving Harmony this year. She is a pianist and artist currently studying in the Visual Art Conservatory at OCSA. She was also the director and screenwriter for multiple short films she did and was awarded several international prizes. With a wide range of hobbies and artistic accomplishments, Vella is contributing to the betterment of society through her talents.',
+    bio: 'Vella Feng is a pianist and artist who is currently studying at the University of Southern California. She is also the director and screenwriter for multiple short films she did and was awarded several international prizes. With a wide range of hobbies and artistic accomplishments, her ultimate goal is to bridge the gap between the visual arts and the digital world, using the passion for both to connect people on a deeper, more immersive level.',
     slogan: "Giving harmony isn't just a place where we play music, but a place we bring love and joys."
   }, {
     name: 'Kerry Wang, member since 2021',
