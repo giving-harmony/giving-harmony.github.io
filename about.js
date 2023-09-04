@@ -45,6 +45,10 @@ const members = [
     name: 'Samantha Luo, member since 2022',
     title: 'pianist',
     bio: 'Samantha Luo is a student at Troy High School. She has played piano for about 6 years and passed MTAC Certificate of Merit Piano Level 10 with state honors. Outside of academics and music, she enjoys reading, scrapbooking, and watching sitcoms. She hopes to share with others the sense of beauty and enjoyment that she finds in music.'
+  }, {
+    name: 'Jena Min, member since 2023',
+    title: 'singer',
+    bio: 'Jena is a student of 8th grade at Yorba Linda Middle School. Jena loves singing and drawing. Her favorite subject at school is history. Jena loves playing volleyball and hanging out with her friends.'
   }
 ];
 
