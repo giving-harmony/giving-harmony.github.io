@@ -45,7 +45,7 @@ const echo = {
     './img/echo/pc056556.jpg',
     './img/echo/pc056617.jpg',
   ],
-  video: 'https://www.youtube.com/embed/98-eAkatJSY',
+  // video: 'https://www.youtube.com/embed/98-eAkatJSY',
   program: [
     [ 'River Flows in You', 'Yiruma', 'Tina Hou, piano' ],
     [ 'Safe and Sound', 'Swift, Williams, White, and Burnett', 'Samantha Huang & Nadia Wang, soprano · Evelyn Wu, flute · Cathy Chen, guitar' ],
