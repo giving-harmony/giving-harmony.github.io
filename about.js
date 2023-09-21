@@ -13,7 +13,7 @@ const members = [
     name: 'Anna Huang, founding member',
     title: 'co-president (2023 --), pianist, flutist',
     bio: 'Anna Huang is a devoted musician, writer, and senior studying at the Orange County School of the Arts in its Creative Writing Conservatory. As a musician, she is passionate about storytelling through musical performance. Anna has performed in various piano competitions, marching band competitions, school talent shows, nursing homes, and more. In recent years, she performed at Carnegie Hall (2021) after being chosen first-place winner in the Golden Classical Music Award International Competition. The following year, she won second place in the American Protégé International Competition for Romantic Music and performed at Carnegie Hall in 2023. Aside from music, Anna enjoys leading part of her church’s Sunday school, building legos, reading with her cat, and advocating for the next generation.',
-    slogan: 'Our music brings harmony, and your love brings change.'
+    slogan: 'Music is a language with no barriers, meant to be shared as a gift from soul to soul.'
   }, {
     name: 'Tina Hou, member since 2021',
     title: 'co-president (2023 --), pianist',
@@ -26,7 +26,7 @@ const members = [
   }, {
     name: 'Samantha Huang, member since 2021',
     title: 'singer',
-    bio: "Samantha Huang is currently a junior at Diamond Bar High School. She loves performing with the award-winning Solitaire show choir and the DBHS advanced dance ensemble. Besides singing and dancing, she enjoys watching musicals, exploring new places, and spending time with her family, friends, and dog. In her free time, she takes part in volunteering at various events through her school’s clubs. With this program, she hopes to showcase her positive energy when performing to bring happiness to others.",
+    bio: 'Samantha Huang is currently a junior at Diamond Bar High School. She loves performing with the award-winning Marquis show choir and helping out with the school’s class committee. Besides singing, she enjoys taking dance classes, watching musicals, exploring new places, and spending time with her family, friends, and dog. In her free time, she takes part in volunteering at various events through her school’s clubs. With this program, she hopes to showcase her positive energy when performing to bring happiness to others.',
     slogan: 'Music is a universal language. To me, music is a way to express and communicate emotions to people you may not know.'
   }, {
     name: 'Nadia Wang, member since 2021',
@@ -45,6 +45,10 @@ const members = [
     name: 'Samantha Luo, member since 2022',
     title: 'pianist',
     bio: 'Samantha Luo is a student at Troy High School. She has played piano for about 6 years and passed MTAC Certificate of Merit Piano Level 10 with state honors. Outside of academics and music, she enjoys reading, scrapbooking, and watching sitcoms. She hopes to share with others the sense of beauty and enjoyment that she finds in music.'
+  }, {
+    name: 'Grace Peng, member since 2023',
+    title: 'pianist',
+    bio: 'Grace is currently a sophomore at Yorba Linda High School.  She began to play the piano at the age of six and has developed a love for music since then. Grace has won in various competitions including state Bach competitions, Theme Festival, Musical Arts, Southwestern Youth Music Festival, and other Music Teacher Association of California competitions. Beside piano, Grace enjoys painting, playing the clarinet, and making small trinkets. At school, Grace loves being a part of the speech and debate team as well as the school’s business program, where she competed at the state level.'
   }, {
     name: 'Jena Min, member since 2023',
     title: 'singer',
