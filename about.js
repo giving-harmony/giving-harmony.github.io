@@ -50,6 +50,10 @@ const members = [
     title: 'pianist',
     bio: 'Grace is currently a sophomore at Yorba Linda High School.  She began to play the piano at the age of six and has developed a love for music since then. Grace has won in various competitions including state Bach competitions, Theme Festival, Musical Arts, Southwestern Youth Music Festival, and other Music Teacher Association of California competitions. Beside piano, Grace enjoys painting, playing the clarinet, and making small trinkets. At school, Grace loves being a part of the speech and debate team as well as the school’s business program, where she competed at the state level.'
   }, {
+    name: 'Bella Huang, member since 2023',
+    title: 'violinist, pianist',
+    bio: 'Bella Huang is a freshman at Valencia High School pursuing both an IB and ValTech diploma. She is a member of her school’s Sinfonia orchestra and tennis team. She enjoys playing music with others, and has participated in Junior Chamber Music (JCM) in 2021-22 and 2022-23, and is a current member of Pacific Symphony Santiago Strings (PSSS). She was also a member of the Irvine Classical Players Orchestra (ICPO) and traveled with them to Spain, performing in various venues in Barcelona, Santiago de Compostela, and Madrid. Bella has also been studying piano for many years, and has achieved the Sonatina Plaque for Piano Guild in 2020. Alongside playing piano and violin, Bella enjoys playing tennis, spending time with her dog, and sleeping. She hopes to bring joy to others through music.'
+  }, {
     name: 'Jena Min, member since 2023',
     title: 'singer',
     bio: 'Jena is a student of 8th grade at Yorba Linda Middle School. Jena loves singing and drawing. Her favorite subject at school is history. Jena loves playing volleyball and hanging out with her friends.'
