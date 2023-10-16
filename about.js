@@ -7,7 +7,7 @@ const members = [
   }, {
     name: 'Evelyn Wu, founding member',
     title: ' former co-president (2022 -- 2023), flutist',
-    bio: 'Evelyn Wu is a high school senior who has been playing the flute for 10 years. She has been a part of many well established ensembles including the Pacific Symphony Youth Wind Ensemble from 2021 to currently in 2023, Orange County Youth Wind Ensemble between 2020-2021, and Diamond Symphony Youth Orchestra between 2019-2020. In her free time, she enjoys reading, baking, and drawing.',
+    bio: 'A passionate flutist, Evelyn Wu has been playing and performing for over 10 years. She has been a part of many well established ensembles including the Pacific Symphony Youth Wind Ensemble from 2021 to 2023 and Orange County Youth Wind Ensemble from 2020 to 2021. Currently, she plays in a small ensemble at Brown University, where she is a freshman studying organismal biology. Besides music, Evelyn is involved in several other organizations at Brown including Model UN, Science Olympiad, and Quizbowl. In her free time, she enjoys drawing, reading, and playing video games with friends.',
     slogan: 'Using music, I want to do for some what I wish I could do for all.'
   }, {
     name: 'Anna Huang, founding member',
