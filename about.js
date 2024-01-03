@@ -46,6 +46,10 @@ const members = [
     title: 'pianist',
     bio: 'Samantha Luo is a student at Troy High School. She has played piano for about 6 years and passed MTAC Certificate of Merit Piano Level 10 with state honors. Outside of academics and music, she enjoys reading, scrapbooking, and watching sitcoms. She hopes to share with others the sense of beauty and enjoyment that she finds in music.'
   }, {
+    name: 'Ella Li, member since 2023',
+    title: 'singer, guitarist, violinist',
+    bio: 'Ella is a junior at troy high school. She has always loved listening to and making music whether through piano, violin, singing, or guitar. Ella’s hobbies extend beyond her instruments as she also dedicates many hours to archery where she competes at the state and national level. She loves spending time with her friends and family and enjoys photography. Ella hopes that through music, she can make an impact on her community.'
+  }, {
     name: 'Grace Peng, member since 2023',
     title: 'pianist',
     bio: 'Grace is currently a sophomore at Yorba Linda High School.  She began to play the piano at the age of six and has developed a love for music since then. Grace has won in various competitions including state Bach competitions, Theme Festival, Musical Arts, Southwestern Youth Music Festival, and other Music Teacher Association of California competitions. Beside piano, Grace enjoys painting, playing the clarinet, and making small trinkets. At school, Grace loves being a part of the speech and debate team as well as the school’s business program, where she competed at the state level.'
