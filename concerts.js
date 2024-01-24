@@ -4,7 +4,23 @@ const journey = {
   venue: [ 'Performing Arts Center, El Dorado High School',
            '1651 Valencia Ave, Placentia, CA 92870' ],
   beneficiary: [ 'Guide Dogs of America', 'https://www.guidedogsofamerica.org' ],
-  poster: 'img/journey/journey.jpg'
+  poster: 'img/2303_journey/journey.jpg',
+  pics: [
+    'img/2303_journey/6h1a0597.jpg',
+    'img/2303_journey/6h1a0710.jpg',
+    'img/2303_journey/6h1a0720.jpg',
+    'img/2303_journey/6h1a0745.jpg',
+    'img/2303_journey/6h1a0776.jpg',
+    'img/2303_journey/6h1a0781.jpg',
+    'img/2303_journey/6h1a0802.jpg',
+    'img/2303_journey/6h1a0814.jpg',
+    'img/2303_journey/6h1a0869.jpg',
+    'img/2303_journey/6h1a0881.jpg',
+    'img/2303_journey/6h1a1141.jpg',
+    'img/2303_journey/6h1a1225.jpg',
+    'img/2303_journey/dsc_5911.jpg',
+    'img/2303_journey/dsc_5957.jpg',
+  ]
 };
 
 const dawn = {
@@ -18,6 +34,8 @@ const dawn = {
     './img/dawn/p5223226.jpg',
     './img/dawn/mmexport1675310301708.jpg',
     './img/dawn/mmexport1675310311381.jpg',
+    './img/dawn/p5224222.jpg',
+    './img/dawn/p5224533.jpg',
     './img/dawn/p5224729.jpg',
   ]
 };
