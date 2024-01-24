@@ -29,14 +29,14 @@ const dawn = {
   venue: [ 'Campus Theatre, Fullerton College',
            '321 E Chapman Ave, Fullerton, CA 92832' ],
   beneficiary: [ "Children's Health Orange County", 'https://raiseup.choc.org/event/ghthedawnconcert' ],
-  poster: 'img/dawn/dawn.jpg',
+  poster: 'img/2205_dawn/dawn.jpg',
   pics: [
-    './img/dawn/p5223226.jpg',
-    './img/dawn/mmexport1675310301708.jpg',
-    './img/dawn/mmexport1675310311381.jpg',
-    './img/dawn/p5224222.jpg',
-    './img/dawn/p5224533.jpg',
-    './img/dawn/p5224729.jpg',
+    './img/2205_dawn/p5223226.jpg',
+    './img/2205_dawn/mmexport1675310301708.jpg',
+    './img/2205_dawn/mmexport1675310311381.jpg',
+    './img/2205_dawn/p5224222.jpg',
+    './img/2205_dawn/p5224533.jpg',
+    './img/2205_dawn/p5224729.jpg',
   ]
 };
 
