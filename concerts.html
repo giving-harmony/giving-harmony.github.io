@@ -62,7 +62,7 @@
 
   <script type="module">
     import { navBar } from './nav.js';
-    import { journey, dawn, echo, initConcertComponents } from './concerts.js';
+    import { aurora, journey, dawn, echo, initConcertComponents } from './concerts.js';
     import { initGalleryComponents } from './util.js';
 
     $('header.navbar').append(navBar('Concerts', 0));
@@ -73,7 +73,7 @@
       el: '#concerts',
       vuetify: new Vuetify(),
       data: { 
-        concerts: [ journey, dawn, echo ],
+        concerts: [ aurora, journey, dawn, echo ],
         panel: 0
       },
       methods: {

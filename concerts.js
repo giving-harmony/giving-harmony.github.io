@@ -1,3 +1,12 @@
+const aurora = {
+  title: '2024 The Aurora',
+  datetime: 'Sunday, Mar 23, 2024 6:00 pm',
+  venue: [ 'Performing Arts Center, El Dorado High School',
+           '1651 Valencia Ave, Placentia, CA 92870' ],
+  beneficiary: [ 'Olive Crest', 'https://www.olivecrest.org' ],
+  poster: 'img/2403_aurora/aurora.jpg',
+};
+
 const journey = {
   title: '2023 The Journey',
   datetime: 'Sunday, Mar 26, 2023 6:00 pm',
@@ -124,4 +133,4 @@ function initConcertComponents() {
   });
 }
 
-export { journey, dawn, echo, initConcertComponents };
+export { aurora, journey, dawn, echo, initConcertComponents };
