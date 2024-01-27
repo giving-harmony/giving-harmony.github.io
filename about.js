@@ -56,7 +56,8 @@ const members = [
   }, {
     name: 'Bella Huang, member since 2023',
     title: 'violinist, pianist',
-    bio: 'Bella Huang is a freshman at Valencia High School pursuing both an IB and ValTech diploma. She is a member of her school’s Sinfonia orchestra and tennis team. She enjoys playing music with others, and has participated in Junior Chamber Music (JCM) in 2021-22 and 2022-23, and is a current member of Pacific Symphony Santiago Strings (PSSS). She was also a member of the Irvine Classical Players Orchestra (ICPO) and traveled with them to Spain, performing in various venues in Barcelona, Santiago de Compostela, and Madrid. Bella has also been studying piano for many years, and has achieved the Sonatina Plaque for Piano Guild in 2020. Alongside playing piano and violin, Bella enjoys playing tennis, spending time with her dog, and sleeping. She hopes to bring joy to others through music.'
+    bio: 'Bella Huang is a freshman at Valencia High School pursuing both an IB and ValTech diploma. She enjoys playing music with others, and is currently a member of Pacific Symphony Santiago Strings and part of her school’s Sinfonia orchestra. She has also participated in Junior Chamber Music (JCM) and Irvine Classical Players Orchestra (ICPO), where she was able to perform in various venues in Spain. Bella has also been studying piano for many years and has achieved the Sonatina Plaque for Piano Guild in 2020. Alongside playing piano and violin, Bella enjoys traveling and spending time with her dog. She hopes to bring joy to others through music.',
+    slogan: 'I hope music can be the bridge that connects us together.'
   }, {
     name: 'Jena Min, member since 2023',
     title: 'singer',
