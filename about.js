@@ -42,13 +42,13 @@ const members = [
     title: 'oboist, pianist',
     bio: 'David Wong, age fourteen, is a sophomore at the Orange County School of the Arts (OCSA). David serves as a principal first-chair oboist for the prestigious Pacific Youth Symphony Ensemble (PSYWE) 2023-2024. He was selected for the California All-State Honor Band and California All-Southern Honor Band in 2022. David has won numerous awards, including the Concordia University Music Competition and the American Fine Arts Festival International Concerto Competition — for which he performed at Carnegie Hall in June 2022 and the Walt Disney Concert Hall in 2023  In addition to playing the oboe, David is also an accomplished pianist. He has been awarded Advanced Level 10 with State Honors in MTAC’s Certificate of Merit Program and had his debut piano performance at Carnegie Hall at age 11. David is passionate about harnessing music to serve his communities.'
   }, {
-    name: 'Samantha Luo, member since 2022',
-    title: 'pianist',
-    bio: 'Samantha Luo is a student at Troy High School. She has played piano for about 6 years and passed MTAC Certificate of Merit Piano Level 10 with state honors. Outside of academics and music, she enjoys reading, scrapbooking, and watching sitcoms. She hopes to share with others the sense of beauty and enjoyment that she finds in music.'
-  }, {
     name: 'Ella Li, member since 2023',
     title: 'singer, guitarist, violinist',
     bio: 'Ella is a junior at troy high school. She has always loved listening to and making music whether through piano, violin, singing, or guitar. Ella’s hobbies extend beyond her instruments as she also dedicates many hours to archery where she competes at the state and national level. She loves spending time with her friends and family and enjoys photography. Ella hopes that through music, she can make an impact on her community.'
+  }, {
+    name: 'Darell Lien, member since 2023',
+    title: 'violinist, guitarist, singer',
+    bio: 'Darell Lien is a junior at Troy High School and loves listening and playing music. Darell’s musical journey began at the age of six when he first picked up the violin. Over the past decade, he has diligently honed his skills, achieving the remarkable feat of reaching Level 10 in the Certificate of Merit (CM) program with honors. Due to his interest in music, over the last couple of years, Darell has taught himself how to play guitar and sing. Aside from his musical ventures, he enjoys playing basketball, bonding with his friends and family, and watching movies. Darell has also achieved the Eagle Scout rank. He hopes that with his music, he will be able to benefit the community.'
   }, {
     name: 'Grace Peng, member since 2023',
     title: 'pianist',
@@ -81,6 +81,10 @@ const alumni = [
     title: 'former vice president (2022 -- 2023), violinist',
     bio: "Kerry Wang, currently attending Valencia High School and pursuiting a dual diploma in IB / Val Tech. Kerry plays violin and piano and is a current member of the school’s Sinfonia Orchestra and M.U.S.I.C. club. She partipates in quartet groups and has performed at assisted living facilities. Kerry has tutored students both academically and musically for some years and wishes to continue to help the community in any way possible.",
     slogan: 'Music accentuates purpose, enhances connections, and evokes emotions. May music connect us all to give each other a helping hand.'
+  }, {
+    name: 'Samantha Luo, member since 2022',
+    title: 'pianist',
+    bio: 'Samantha Luo is a student at Troy High School. She has played piano for about 6 years and passed MTAC Certificate of Merit Piano Level 10 with state honors. Outside of academics and music, she enjoys reading, scrapbooking, and watching sitcoms. She hopes to share with others the sense of beauty and enjoyment that she finds in music.'
   }
 ];
 
