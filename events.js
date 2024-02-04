@@ -1,5 +1,18 @@
 const events2023 = [
   {
+    name: 'Eastern Star Concert',
+    date: 'December 24th',
+    desc: 'Giving Harmony had a concert at Eastern Star Homes, a senior living community.',
+    pics: [
+      './img/2312_eastern_star/img_9034.jpg',
+      './img/2312_eastern_star/img_9069.jpg',
+      './img/2312_eastern_star/img_9099.jpg',
+      './img/2312_eastern_star/img_9119.jpg',
+      './img/2312_eastern_star/img_9247.jpg',
+      './img/2312_eastern_star/img_9248.jpg',
+      './img/2312_eastern_star/img_9264.jpg',
+    ]
+  }, {
     name: 'Olive Crest Christmas Party',
     date: 'December 19th',
     desc: 'Giving Harmony helping at Christmas Party for children.',
@@ -27,7 +40,7 @@ const events2022 = [
   }, {
     name: 'Park Terrace Concert',
     date: 'August 15th',
-    desc: '',
+    desc: 'Giving Harmony had two concerts at Park Terrace, a senior living community.',
     pics: [
       './img/2208_park_terrace/mmexport1660800653431.jpg',
       './img/2208_park_terrace/mmexport1660800685820.jpg',
