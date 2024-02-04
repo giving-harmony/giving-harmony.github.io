@@ -1,3 +1,16 @@
+const events2023 = [
+  {
+    name: 'Olive Crest Christmas Party',
+    date: 'December 19th',
+    desc: 'Giving Harmony helping at Christmas Party for children.',
+    pics: [
+      './img/2312_olive_crest/056dd7ffebb69a6629c9e0933be75014.jpg',
+      './img/2312_olive_crest/a8539a6ad470074f73921577d0e1026b.jpg',
+      './img/2312_olive_crest/c0ecceebe862ae56d4642cbe1cd99f8f.jpg',
+    ]
+  }
+];
+
 const events2022 = [
   {
     name: 'Summer Gathering',
@@ -82,6 +95,10 @@ const events2019 = [
 ];
 
 const yearlyEvents = [
+  {
+    year: 2023,
+    events: events2023
+  },
   { 
     year: 2022,
     events: events2022
