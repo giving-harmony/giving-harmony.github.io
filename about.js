@@ -1,7 +1,7 @@
 const members = [
   {
     name: 'Ivette Chen, founding member',
-    title: 'chief supervisor, former co-president (2019 -- 2022), cellist, pianist',
+    title: 'co-director, former co-president (2019 -- 2022), cellist, pianist',
     bio: "As a semifinalist of the XI International Tchaikovsky Competition for Young Musicians, Ivette Chen was one of six cellists to represent the US. Ivette has been a prizewinner for many international competitions and has performed at various venues, including Carnegie’s Stern Auditorium, Irvine’s Barclay Theatre, and UCLA’s Royce Hall for her teacher Lynn Harrell in his “In Remembrance” Concert. Ivette is a sophomore at Harvard University and is concentrating in neuroscience. She is also involved in the Harvard-Radcliffe Orchestra, Harvard Asian American Dance Troupe, Harvard Synapse as Director of Publicity and Technology, and conducting brain research at Mass General Hospital. She enjoys giving back to the community through music and aspires to tie music into medicine to help prevent neurological disorders in the future.",
     slogan: "There are people in the world who do not have the privileges that are present in our life. Let’s help those people gain those benefits. Each note played out extends a helping hand."
   }, {
