@@ -1,3 +1,37 @@
+const events2023 = [
+  {
+    name: 'Eastern Star Concert',
+    date: 'December 24th',
+    desc: 'Giving Harmony had a concert at Eastern Star Homes, a senior living community.',
+    pics: [
+      './img/2312_eastern_star/img_9034.jpg',
+      './img/2312_eastern_star/img_9069.jpg',
+      './img/2312_eastern_star/img_9099.jpg',
+      './img/2312_eastern_star/img_9119.jpg',
+      './img/2312_eastern_star/img_9247.jpg',
+      './img/2312_eastern_star/img_9264.jpg',
+    ]
+  }, {
+    name: 'Olive Crest Christmas Party',
+    date: 'December 19th',
+    desc: 'Giving Harmony helping at Christmas Party for children.',
+    pics: [
+      './img/2312_olive_crest/056dd7ffebb69a6629c9e0933be75014.jpg',
+      './img/2312_olive_crest/a8539a6ad470074f73921577d0e1026b.jpg',
+      './img/2312_olive_crest/c0ecceebe862ae56d4642cbe1cd99f8f.jpg',
+    ]
+  }, {
+    name: 'Fall Gathering',
+    date: 'October 28',
+    pics: [
+      './img/23_fall_gathering/img_8171.jpg',
+      './img/23_fall_gathering/253dc960f6facaa6dcf740185ea75245.jpg',
+      './img/23_fall_gathering/2bf1d8a18170e235d395fbcad254ea07.jpg',
+      './img/23_fall_gathering/83c6b139dc6215bfd3e1dcb1d0d1ca04.jpg',
+    ]
+  }
+];
+
 const events2022 = [
   {
     name: 'Summer Gathering',
@@ -14,7 +48,7 @@ const events2022 = [
   }, {
     name: 'Park Terrace Concert',
     date: 'August 15th',
-    desc: '',
+    desc: 'Giving Harmony had two concerts at Park Terrace, a senior living community.',
     pics: [
       './img/2208_park_terrace/mmexport1660800653431.jpg',
       './img/2208_park_terrace/mmexport1660800685820.jpg',
@@ -82,6 +116,10 @@ const events2019 = [
 ];
 
 const yearlyEvents = [
+  {
+    year: 2023,
+    events: events2023
+  },
   { 
     year: 2022,
     events: events2022

@@ -4,6 +4,7 @@ function initGalleryComponents() {
     template: '<div class="imageitem">' +
               '  <v-card elevation="2" class="gallery">' +
               '    <v-card-title v-if=showTitle>{{ `${event.name}, ${event.date}` }}</v-card-title>' +
+              '    <v-card-text v-if=event.desc>{{ event.desc }}</v-card-text>' +
               '    <v-carousel eager>' +
               '      <v-carousel-item' +
               '        v-for="item in event.pics"' +
