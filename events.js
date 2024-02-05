@@ -9,7 +9,6 @@ const events2023 = [
       './img/2312_eastern_star/img_9099.jpg',
       './img/2312_eastern_star/img_9119.jpg',
       './img/2312_eastern_star/img_9247.jpg',
-      './img/2312_eastern_star/img_9248.jpg',
       './img/2312_eastern_star/img_9264.jpg',
     ]
   }, {
