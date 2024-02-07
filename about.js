@@ -22,7 +22,8 @@ const members = [
   }, {
     name: 'Thomas Wu, member since 2021',
     title: 'vice president (2023 --), pianist',
-    bio: "Thomas Wu is a pianist who has been playing for more than 8 years. A senior at Valencia High School, Thomas' hobbies extend beyond piano, as he also enjoys tinkering with computer keyboards, traveling, and videography. Thomas is also passionate about photography and learning how to edit photos."
+    bio: 'Thomas Wu is a pianist who has been playing for more than 8 years. A senior at Valencia High School, Thomas’ hobbies extend beyond piano, as he also enjoys tinkering with computer keyboards, traveling, and videography. Thomas is also passionate about photography and learning how to edit photos.',
+    slogan: 'Music brings a warm glow to my vision, thawing mind, and muscle from their endless wintering. - Haruki Murakami'
   }, {
     name: 'Samantha Huang, member since 2021',
     title: 'singer',
@@ -44,7 +45,8 @@ const members = [
   }, {
     name: 'Ella Li, member since 2023',
     title: 'singer, guitarist, violinist',
-    bio: 'Ella is a junior at troy high school. She has always loved listening to and making music whether through piano, violin, singing, or guitar. Ella’s hobbies extend beyond her instruments as she also dedicates many hours to archery where she competes at the state and national level. She loves spending time with her friends and family and enjoys photography. Ella hopes that through music, she can make an impact on her community.'
+    bio: 'Ella is a junior at Troy high School. She started her musical journey with piano and violin and has loved listening to and making music since. She achieved Advanced Level 10 for Piano in MTAC’s Certificate of Merit Program and also played violin in the Orange County Youth Symphony. During quarantine in 2020, Ella picked up a new hobby, she started singing pop songs and learning to play the guitar. Since then, she attended a couple of singing competitions and has earned several awards, including the gold award and the most potential artist award from the 6th American Starlight Youth Talent Competition Los Angeles Division and 1st Prize in the 3rd Gold International Classical Music Competition. Music has brought a new and invigorating perspective into Ella’s life and she believes that she can help others have the same experience through her own music. Ella’s hobbies extend beyond her instruments as she also dedicates many hours to competitive archery. She is state and nationally ranked and has won numerous gold medals. She also loves spending time with her friends and family and enjoys photography.',
+    slogan: 'Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything. - Plato'
   }, {
     name: 'Darell Lien, member since 2023',
     title: 'violinist, guitarist, singer',
