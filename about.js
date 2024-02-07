@@ -79,7 +79,7 @@ const alumni = [
   }, {
     name: 'Kerry Wang, member since 2021',
     title: 'former vice president (2022 -- 2023), violinist',
-    bio: "Kerry Wang, currently attending Valencia High School and pursuiting a dual diploma in IB / Val Tech. Kerry plays violin and piano and is a current member of the school’s Sinfonia Orchestra and M.U.S.I.C. club. She partipates in quartet groups and has performed at assisted living facilities. Kerry has tutored students both academically and musically for some years and wishes to continue to help the community in any way possible.",
+    bio: 'As a violinist and pianist, Kerry finds solace in the company of music and cherishes the memories forged through her experiences in the performing arts. Having been a part of the orchestra for nearly a decade, she has performed as a soloist and in smaller ensembles like the Chamber Music Institute. Now a freshman at Johns Hopkins University, Kerry continues her musical pursuit as a violinist in the Johns Hopkins Orchestra. Academically, she pursues a double major in Computer Science and Applied Mathematics and Statistics. In her leisure time, Kerry enjoys playing badminton with friends, reading, exploring new facets of campus life, and engaging in games. Looking ahead, she aspires to persist in her computer science research and share her mutual enthusiasm for music with others.',
     slogan: 'Music accentuates purpose, enhances connections, and evokes emotions. May music connect us all to give each other a helping hand.'
   }, {
     name: 'Samantha Luo, member since 2022',
