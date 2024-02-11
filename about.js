@@ -22,7 +22,7 @@ const members = [
   }, {
     name: 'Thomas Wu, member since 2021',
     title: 'vice president (2023 --), pianist',
-    bio: 'Thomas Wu is a pianist who has been playing for more than 8 years. A senior at Valencia High School, Thomas’ hobbies extend beyond piano, as he also enjoys tinkering with computer keyboards, traveling, and videography. Thomas is also passionate about photography and learning how to edit photos.',
+    bio: 'Thomas Wu is a pianist who is currently a senior at Valencia High School. He is also a photographer that has reveived multiple state-level awards for his unique composition of photos. Outside of the arts, Thomas is the captain of his golf team, where he enjoys competing against other high schools. In his free time, he tinkers around with mechanical keyboards, running a small business selling parts with his friends.',
     slogan: 'Music brings a warm glow to my vision, thawing mind, and muscle from their endless wintering. - Haruki Murakami'
   }, {
     name: 'Samantha Huang, member since 2021',
