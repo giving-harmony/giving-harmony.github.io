@@ -54,7 +54,8 @@ const members = [
   }, {
     name: 'Grace Peng, member since 2023',
     title: 'pianist',
-    bio: 'Grace is currently a sophomore at Yorba Linda High School.  She began to play the piano at the age of six and has developed a love for music since then. Grace has won in various competitions including state Bach competitions, Theme Festival, Musical Arts, Southwestern Youth Music Festival, and other Music Teacher Association of California competitions. Beside piano, Grace enjoys painting, playing the clarinet, and making small trinkets. At school, Grace loves being a part of the speech and debate team as well as the school’s business program, where she competed at the state level.'
+    bio: 'Grace is currently a sophomore at Yorba Linda High School.  She began to play the piano at the age of six and has developed a love for music since then. Grace has won in various competitions including state Bach competitions, Theme Festival, Musical Arts, Southwestern Youth Music Festival, and other Music Teacher Association of California competitions. Beside piano, Grace enjoys painting, playing the clarinet, and making small trinkets. At school, Grace loves being a part of the speech and debate team as well as the school’s business program, where she competed at the state level.',
+    slogan: 'Where words fail, music speaks. - Hans Christian Anderson'
   }, {
     name: 'Bella Huang, member since 2023',
     title: 'violinist, pianist',
