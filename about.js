@@ -17,8 +17,8 @@ const members = [
   }, {
     name: 'Tina Hou, member since 2021',
     title: 'co-president (2023 --), pianist',
-    bio: "As a junior at the Webb Schools, Tina Hou has been playing the piano since a young age and hopes to support her community with music. She has won multiple awards in musical events such as the MTAC Piano Ensemble Festival, Orange County North Solo Competition, and more. She was also chosen as the second place winner for the American Protégé International Music Talent Competition Fall 2022, giving her the opportunity to perform at Weill Hall at Carnegie Hall in the upcoming summer. Besides playing the piano, Tina also enjoys tweaking with technologies as well as programming. As the captain of mechanics and design on her school’s robotics team, she hopes to better the future of society with the advancement of artificial intelligence and the strength of human kindness.",
-    slogan: 'I wish my music can arose more kindness in everyone. Let this kindess flow into the hearts of those who seek support. In their hearts, may hope be planted and may happiness blossom.'
+    bio: 'As a junior at the Webb Schools, Tina Hou has been playing the piano since a young age and hopes to support her community with music. She has won multiple awards in musical events such as the MTAC Piano Ensemble Festival, Orange County North Solo Competition, and more. She was also chosen as the second place winner for the American Protégé International Music Talent Competition Fall 2022, giving her the opportunity to perform at Weill Hall at Carnegie Hall in the summer of 2023. In addition to playing the piano, Tina holds the position of captain on one of her school’s FTC robotics teams, where she serves as a designer and builder. In her free time, Tina engages with her passions for languages and computer science.',
+    slogan: 'Music is a timeless voyage across seas of passions, carrying stories of the heart.'
   }, {
     name: 'Thomas Wu, member since 2021',
     title: 'vice president (2023 --), pianist',
