@@ -51,7 +51,8 @@ const members = [
   }, {
     name: 'Darell Lien, member since 2023',
     title: 'violinist, guitarist, singer',
-    bio: 'Darell Lien is a junior at Troy High School and loves listening and playing music. Darell’s musical journey began at the age of six when he first picked up the violin. Over the past decade, he has diligently honed his skills, achieving the remarkable feat of reaching Level 10 in the Certificate of Merit (CM) program with honors. Due to his interest in music, over the last couple of years, Darell has taught himself how to play guitar and sing. Aside from his musical ventures, he enjoys playing basketball, bonding with his friends and family, and watching movies. Darell has also achieved the Eagle Scout rank. He hopes that with his music, he will be able to benefit the community.'
+    bio: 'Darell Lien is a junior at Troy High School and loves listening and playing music. Darell’s musical journey began at the age of six when he first picked up the violin. Over the past decade, he has diligently honed his skills, achieving the remarkable feat of reaching Level 10 in the Certificate of Merit (CM) program with honors. Due to his interest in music, over the last couple of years, Darell has taught himself how to play guitar and sing. Aside from his musical ventures, he enjoys playing basketball, bonding with his friends and family, and watching movies. Darell has also achieved the Eagle Scout rank. He hopes that with his music, he will be able to benefit the community.',
+    slogan: 'Music can name the unnameable and communicate the unknowable. – Leonard Bernstein'
   }, {
     name: 'Grace Peng, member since 2023',
     title: 'pianist',
