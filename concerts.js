@@ -1,6 +1,6 @@
 const aurora = {
   title: '2024 The Aurora',
-  datetime: 'Sunday, Mar 23, 2024 6:00 pm',
+  datetime: 'Saturday, Mar 23, 2024 6:00 pm',
   venue: [ 'Performing Arts Center, El Dorado High School',
            '1651 Valencia Ave, Placentia, CA 92870' ],
   beneficiary: [ 'Olive Crest', 'https://www.olivecrest.org' ],
