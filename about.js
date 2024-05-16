@@ -66,7 +66,8 @@ const members = [
   }, {
     name: 'Jena Min, member since 2023',
     title: 'singer',
-    bio: 'Jena is a student of 8th grade at Yorba Linda Middle School. Jena loves singing and drawing. Her favorite subject at school is history. Jena loves playing volleyball and hanging out with her friends.'
+    bio: 'Jena is a student of 8th grade at Yorba Linda Middle School. Jena loves singing and drawing. Her favorite subject at school is history. Jena loves playing volleyball and hanging out with her friends.',
+    slogan: 'Music can heal the wounds which medicine cannot touch. - Debasish Mridha'
   }
 ];
 
