@@ -5,6 +5,30 @@ const aurora = {
            '1651 Valencia Ave, Placentia, CA 92870' ],
   beneficiary: [ 'Olive Crest', 'https://www.olivecrest.org' ],
   poster: 'img/2403_aurora/aurora.jpg',
+  pics: [
+    'img/2403_aurora/6h1a3894.jpg',
+    'img/2403_aurora/6h1a3906.jpg',
+    'img/2403_aurora/6h1a3928.jpg',
+    'img/2403_aurora/6h1a3969.jpg',
+    'img/2403_aurora/6h1a4010.jpg',
+    'img/2403_aurora/6h1a4023.jpg',
+    'img/2403_aurora/6h1a4077.jpg',
+    'img/2403_aurora/6h1a4107.jpg',
+    'img/2403_aurora/6h1a4151.jpg',
+    'img/2403_aurora/6h1a4167.jpg',
+    'img/2403_aurora/6h1a4216.jpg',
+    'img/2403_aurora/6h1a4251.jpg',
+    'img/2403_aurora/6h1a4303.jpg',
+    'img/2403_aurora/6h1a4322.jpg',
+    'img/2403_aurora/6h1a4363.jpg',
+    'img/2403_aurora/6h1a4393.jpg',
+    'img/2403_aurora/6h1a4467.jpg',
+    'img/2403_aurora/6h1a4491.jpg',
+    'img/2403_aurora/dsc_9577.jpg',
+    'img/2403_aurora/dsc_9602.jpg',
+    'img/2403_aurora/dsc_9635.jpg',
+    'img/2403_aurora/dsc_9679.jpg'
+  ]
 };
 
 const journey = {
