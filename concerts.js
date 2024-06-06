@@ -1,3 +1,12 @@
+const constellation = {
+  title: '2024 The Constellation',
+  datetime: 'Saturday, May 25, 2024 7:00 pm',
+  venue: [ 'Performing Arts Center, El Dorado High School',
+           '1651 Valencia Ave, Placentia, CA 92870' ],
+  beneficiary: [ 'Mission:Brain Sierra Leone Initiative', 'https://www.missionbrain.org/sierra-leone-initiative.html' ],
+  poster: 'img/2405_constellation/image_20240325201951.jpg',
+}
+
 const aurora = {
   title: '2024 The Aurora',
   datetime: 'Saturday, Mar 23, 2024 6:00 pm',
@@ -157,4 +166,4 @@ function initConcertComponents() {
   });
 }
 
-export { aurora, journey, dawn, echo, initConcertComponents };
+export { constellation, aurora, journey, dawn, echo, initConcertComponents };
